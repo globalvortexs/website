@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "about": "Sobre",
+    "testimonials": "Depoimentos",
+    "contactUs": "Contato"
+  },
+  "hero": {
+    "title": "Transformando Ideias em Sucesso Global",
+    "subtitle": "A Global Vortex ajuda empresas a navegar pelas complexidades do mercado atual com soluções inovadoras e expertise estratégica. Seja nosso parceiro para elevar seu negócio a novos patamares.",
+    "getStarted": "Começar Agora",
+    "ourServices": "Nossos Serviços",
+    "clients": "clientes satisfeitos em todo o mundo"
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Oferecemos uma gama abrangente de serviços projetados para ajudar seu negócio a prosperar no competitivo cenário atual.",
+    "learnMore": "Saiba Mais",
+    "discussProject": "Discutir Seu Projeto",
+    "items": [
+      {
+        "title": "Estratégia de Negócios",
+        "description": "Desenvolva estratégias de negócios abrangentes para atingir seus objetivos e maximizar o potencial de crescimento."
+      },
+      {
+        "title": "Expansão Global",
+        "description": "Navegue pelos mercados internacionais com nossa expertise em desenvolvimento de negócios globais e localização."
+      },
+      {
+        "title": "Transformação Digital",
+        "description": "Modernize seu negócio com soluções digitais de ponta adaptadas às suas necessidades específicas."
+      },
+      {
+        "title": "Gestão de Talentos",
+        "description": "Otimize sua força de trabalho com nossos programas estratégicos de recrutamento e desenvolvimento de funcionários."
+      },
+      {
+        "title": "Análise de Mercado",
+        "description": "Obtenha insights valiosos com nossa pesquisa de mercado aprofundada e serviços de análise competitiva."
+      },
+      {
+        "title": "Gestão de Riscos",
+        "description": "Identifique e mitigue riscos potenciais com nossas estratégias abrangentes de avaliação de riscos."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre a Global Vortex",
+    "paragraph1": "Fundada em 2013, a Global Vortex se estabeleceu como líder em consultoria empresarial e soluções estratégicas. Nossa missão é capacitar organizações para alcançar crescimento sustentável e excelência por meio de estratégias inovadoras e orientação especializada.",
+    "paragraph2": "Com uma equipe de profissionais experientes de diversas indústrias, trazemos uma riqueza de conhecimento e experiência para cada projeto. Nossa abordagem colaborativa garante que entendamos seus desafios únicos e entreguemos soluções personalizadas que impulsionam resultados reais.",
+    "features": [
+      {
+        "title": "Abordagem Centrada no Cliente",
+        "description": "Priorizamos suas necessidades e objetivos, garantindo soluções personalizadas."
+      },
+      {
+        "title": "Soluções Inovadoras",
+        "description": "Utilizamos tecnologias e metodologias de ponta para impulsionar o sucesso."
+      },
+      {
+        "title": "Perspectiva Global",
+        "description": "Nossa experiência internacional fornece insights valiosos para mercados globais."
+      }
+    ],
+    "stats": {
+      "experience": "Anos de Experiência",
+      "clients": "Clientes no Mundo",
+      "satisfaction": "Satisfação do Cliente",
+      "experts": "Consultores Especialistas"
+    }
+  },
+  "testimonials": {
+    "title": "O Que Nossos Clientes Dizem",
+    "subtitle": "Não acredite apenas em nossa palavra. Veja o que nossos clientes têm a dizer sobre trabalhar com a Global Vortex."
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Tem um projeto em mente? Entre em contato conosco e vamos criar algo incrível juntos.",
+    "form": {
+      "title": "Envie-nos uma Mensagem",
+      "fullName": "Nome Completo",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "company": "Empresa",
+      "message": "Mensagem",
+      "messagePlaceholder": "Como podemos ajudar você?",
+      "consent": "Concordo com o processamento dos meus dados pessoais de acordo com a Política de Privacidade",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": {
+        "title": "Mensagem Enviada!",
+        "message": "Obrigado por entrar em contato. Retornaremos em breve."
+      }
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "address": {
+        "label": "Endereço",
+        "value": "Avenida Negócios 1234, Sala 500\nSão Paulo, SP 01234-567"
+      },
+      "phone": {
+        "label": "Telefone",
+        "value": "+55 (11) 1234-5678"
+      },
+      "email": {
+        "label": "E-mail",
+        "value": "contato@globalvortex.com"
+      },
+      "hours": {
+        "label": "Horário de Funcionamento",
+        "value": "Segunda - Sexta: 9:00 - 18:00\nSábado: 10:00 - 14:00"
+      },
+      "followUs": "Siga-nos"
+    }
+  },
+  "footer": {
+    "description": "Capacitando empresas para alcançar sucesso global através de soluções inovadoras e expertise estratégica.",
+    "services": "Serviços",
+    "company": "Empresa",
+    "legal": "Legal",
+    "rights": "Todos os direitos reservados.",
+    "links": {
+      "about": "Sobre Nós",
+      "team": "Nossa Equipe",
+      "careers": "Carreiras",
+      "blog": "Blog",
+      "contact": "Contato",
+      "terms": "Termos de Serviço",
+      "privacy": "Política de Privacidade",
+      "cookies": "Política de Cookies",
+      "gdpr": "Conformidade com GDPR"
+    }
+  }
+}
