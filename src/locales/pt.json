@@ -8,7 +8,7 @@
   },
   "hero": {
     "title": "Transformando Ideias em Sucesso Global",
-    "subtitle": "A Global Vortex ajuda empresas a navegar pelas complexidades do mercado atual com soluções inovadoras e expertise estratégica. Seja nosso parceiro para elevar seu negócio a novos patamares.",
+    "subtitle": "A Global Vortex Solutions impulsiona empresas com tecnologia inteligente e soluções sob medida. Unimos inovação, integração e monitoramento para transformar seus desafios em crescimento real. Seja nosso parceiro e leve seu negócio a um novo patamar com o poder do Nucleus.",
     "getStarted": "Começar Agora",
     "ourServices": "Nossos Serviços",
     "clients": "clientes satisfeitos em todo o mundo"
@@ -47,28 +47,27 @@
   },
   "about": {
     "title": "Sobre a Global Vortex",
-    "paragraph1": "Fundada em 2013, a Global Vortex se estabeleceu como líder em consultoria empresarial e soluções estratégicas. Nossa missão é capacitar organizações para alcançar crescimento sustentável e excelência por meio de estratégias inovadoras e orientação especializada.",
-    "paragraph2": "Com uma equipe de profissionais experientes de diversas indústrias, trazemos uma riqueza de conhecimento e experiência para cada projeto. Nossa abordagem colaborativa garante que entendamos seus desafios únicos e entreguemos soluções personalizadas que impulsionam resultados reais.",
+    "paragraph1": "A Global Vortex Solutions nasceu com a missão de transformar ideias em soluções digitais inteligentes e escaláveis. Somos especialistas em desenvolvimento de aplicações e serviços de TI, oferecendo tecnologia de alto desempenho para empresas que desejam evoluir com segurança no cenário digital.",
+    "paragraph2": "Nosso grande diferencial é o Nucleus, uma plataforma de integração e monitoramento de aplicações que conecta sistemas, identifica falhas em tempo real e eleva o controle operacional das empresas.",
+    "paragraph3": "Com uma equipe experiente, entregamos projetos personalizados com foco em resultados, inovação e escalabilidade.",
     "features": [
       {
-        "title": "Abordagem Centrada no Cliente",
-        "description": "Priorizamos suas necessidades e objetivos, garantindo soluções personalizadas."
+        "title": "Foco em Resultados",
+        "description": "Soluções alinhadas aos seus objetivos de negócio, com agilidade e eficiência."
       },
       {
-        "title": "Soluções Inovadoras",
-        "description": "Utilizamos tecnologias e metodologias de ponta para impulsionar o sucesso."
+        "title": "Integração Inteligente",
+        "description": "O Nucleus conecta seus sistemas e monitora aplicações em tempo real."
       },
       {
-        "title": "Perspectiva Global",
-        "description": "Nossa experiência internacional fornece insights valiosos para mercados globais."
+        "title": "Tecnologia de Ponta",
+        "description": "Aplicamos metodologias modernas para criar soluções robustas e sustentáveis."
+      },
+      {
+        "title": "Visão de Futuro",
+        "description": "Pensamos e desenvolvemos soluções que crescem junto com você."
       }
-    ],
-    "stats": {
-      "experience": "Anos de Experiência",
-      "clients": "Clientes no Mundo",
-      "satisfaction": "Satisfação do Cliente",
-      "experts": "Consultores Especialistas"
-    }
+    ]
   },
   "testimonials": {
     "title": "O Que Nossos Clientes Dizem",

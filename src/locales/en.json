@@ -8,7 +8,7 @@
   },
   "hero": {
     "title": "Transforming Ideas into Global Success",
-    "subtitle": "Global Vortex helps businesses navigate the complexities of today's market with innovative solutions and strategic expertise. Partner with us to elevate your business to new heights.",
+    "subtitle": "Global Vortex Solutions empowers businesses with smart technology and tailored solutions. We combine innovation, integration, and monitoring to turn your challenges into real growth. Partner with us and take your business to the next level with the power of Nucleus.",
     "getStarted": "Get Started",
     "ourServices": "Our Services",
     "clients": "satisfied clients worldwide"
@@ -47,28 +47,27 @@
   },
   "about": {
     "title": "About Global Vortex",
-    "paragraph1": "Founded in 2013, Global Vortex has established itself as a leader in business consulting and strategic solutions. Our mission is to empower organizations to achieve sustainable growth and excellence through innovative strategies and expert guidance.",
-    "paragraph2": "With a team of seasoned professionals from diverse industries, we bring a wealth of knowledge and experience to every project. Our collaborative approach ensures that we understand your unique challenges and deliver tailored solutions that drive real results.",
+    "paragraph1": "Global Vortex Solutions was founded with the mission to turn ideas into intelligent, scalable digital solutions. We specialize in custom application development and IT services, delivering high-performance technology for companies ready to evolve in the digital era.",
+    "paragraph2": "Our standout innovation is Nucleus, an integration and application monitoring platform that connects systems, detects failures in real time, and enhances operational control.",
+    "paragraph3": "With a skilled and passionate team, we deliver tailored projects focused on results, innovation, and long-term growth.",
     "features": [
       {
-        "title": "Client-Centric Approach",
-        "description": "We prioritize your needs and goals, ensuring personalized solutions."
+        "title": "Results-Driven Approach",
+        "description": "Solutions aligned with your business goals — fast, efficient, and effective."
       },
       {
-        "title": "Innovative Solutions",
-        "description": "We leverage cutting-edge technologies and methodologies to drive success."
+        "title": "Smart Integration",
+        "description": "Nucleus connects your systems and monitors applications in real time."
       },
       {
-        "title": "Global Perspective",
-        "description": "Our international experience provides valuable insights for global markets."
+        "title": "Cutting-Edge Technology",
+        "description": "We use modern tools and methods to build robust, future-ready solutions."
+      },
+      {
+        "title": "Future-Focused Vision",
+        "description": "We design scalable solutions that grow with your business."
       }
-    ],
-    "stats": {
-      "experience": "Years of Experience",
-      "clients": "Clients Worldwide",
-      "satisfaction": "Client Satisfaction",
-      "experts": "Expert Consultants"
-    }
+    ]
   },
   "testimonials": {
     "title": "What Our Clients Say",
