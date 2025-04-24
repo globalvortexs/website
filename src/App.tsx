@@ -48,7 +48,7 @@ export default function App() {
               underline="hover"
               className="font-medium flex items-center gap-1.5"
             >
-              <Icon icon="lucide:home" className="text-default-500" size={18} />
+              <Icon icon="lucide:home" className="text-default-500" width={18} height={18} />
               {t('nav.home')}
             </Link>
           </NavbarItem>
@@ -59,7 +59,7 @@ export default function App() {
               underline="hover"
               className="font-medium flex items-center gap-1.5"
             >
-              <Icon icon="lucide:briefcase" className="text-default-500" size={18} />
+              <Icon icon="lucide:briefcase" className="text-default-500" width={18} height={18} />
               {t('nav.services')}
             </Link>
           </NavbarItem>
@@ -70,7 +70,7 @@ export default function App() {
               underline="hover"
               className="font-medium flex items-center gap-1.5"
             >
-              <Icon icon="lucide:info" className="text-default-500" size={18} />
+              <Icon icon="lucide:info" className="text-default-500" width={18} height={18} />
               {t('nav.about')}
             </Link>
           </NavbarItem>
@@ -88,7 +88,7 @@ export default function App() {
               color="primary" 
               href="#contact" 
               variant="shadow"
-              startContent={<Icon icon="lucide:message-circle" size={18} />}
+              startContent={<Icon icon="lucide:message-circle" width={18} height={18} />}
               className="font-medium"
             >
               {t('nav.contactUs')}
@@ -104,7 +104,7 @@ export default function App() {
               className="w-full flex items-center gap-2 py-2"
               size="lg"
             >
-              <Icon icon="lucide:home" className="text-default-500" size={18} />
+              <Icon icon="lucide:home" className="text-default-500" width={18} height={18} />
               {t('nav.home')}
             </Link>
           </NavbarMenuItem>
@@ -115,7 +115,7 @@ export default function App() {
               className="w-full flex items-center gap-2 py-2"
               size="lg"
             >
-              <Icon icon="lucide:briefcase" className="text-default-500" size={18} />
+              <Icon icon="lucide:briefcase" className="text-default-500" width={18} height={18} />
               {t('nav.services')}
             </Link>
           </NavbarMenuItem>
@@ -126,7 +126,7 @@ export default function App() {
               className="w-full flex items-center gap-2 py-2"
               size="lg"
             >
-              <Icon icon="lucide:info" className="text-default-500" size={18} />
+              <Icon icon="lucide:info" className="text-default-500" width={18} height={18} />
               {t('nav.about')}
             </Link>
           </NavbarMenuItem>
@@ -137,7 +137,7 @@ export default function App() {
               className="w-full flex items-center gap-2 py-2"
               size="lg"
             >
-              <Icon icon="lucide:message-square-quote" className="text-default-500" size={18} />
+              <Icon icon="lucide:message-square-quote" className="text-default-500" width={18} height={18} />
               {t('nav.testimonials')}
             </Link>
           </NavbarMenuItem>

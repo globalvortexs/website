@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Divider } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";

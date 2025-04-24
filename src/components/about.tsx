@@ -1,14 +1,13 @@
-import React from "react";
 import { Card, CardBody } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";
 
-const stats = [
-  { value: "10+", label: "Years of Experience" },
-  { value: "500+", label: "Clients Worldwide" },
-  { value: "98%", label: "Client Satisfaction" },
-  { value: "50+", label: "Expert Consultants" },
-];
+//const stats = [
+//  { value: "10+", label: "Years of Experience" },
+//  { value: "500+", label: "Clients Worldwide" },
+//  { value: "98%", label: "Client Satisfaction" },
+//  { value: "50+", label: "Expert Consultants" },
+//];
 
 export const About = () => {
   const { t } = useTranslation();
@@ -33,7 +32,7 @@ export const About = () => {
           </p>
           
           <div className="space-y-4 mt-8">
-            {t('about.features', { returnObjects: true }).map((feature, index) => (
+            {(t('about.features', { returnObjects: true }) as any[]).map((feature: any, index: number) => (
               <div key={index} className="flex items-start gap-3">
                 <Icon icon="lucide:check-circle" className="text-primary text-xl mt-1" />
                 <div>

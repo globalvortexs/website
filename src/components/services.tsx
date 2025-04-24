@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardBody, Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";
@@ -49,7 +48,7 @@ export const Services = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {t('services.items', { returnObjects: true }).map((service, index) => (
+        {(t('services.items', { returnObjects: true }) as any[]).map((service: any, index: number) => (
           <Card 
             key={index} 
             className="border border-divider"
