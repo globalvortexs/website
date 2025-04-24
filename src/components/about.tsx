@@ -1,4 +1,3 @@
-import { Card, CardBody } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";
 import customBuild from "../assets/language-img/en/custom-built-solutions-en.png";
