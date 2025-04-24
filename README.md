@@ -54,4 +54,3 @@ Suporte a múltiplos idiomas com `i18next`:
 
 - Node.js (v18 ou superior)
 - npm (v9 ou superior)
-

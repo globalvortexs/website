@@ -34,6 +34,10 @@ body {
   object-fit: contain;
 }
 
+.custom-built {
+  margin-top: 5.5rem;
+}
+
 /* Ensure flag icons display properly */
 [class*="logos\\:"] {
   display: inline-block;
