@@ -41,8 +41,4 @@ jobs:
     # - run: npm test
     - run: npm install
     - run: npm run predeploy
-
-    - name: Add CNAME file
-      run: echo 'globalvortexs.com' > public/CNAME
-    
     - run: npm run deploy
