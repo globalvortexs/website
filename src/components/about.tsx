@@ -45,12 +45,12 @@ export const About = () => {
               <img
                 src={realTime}
                 alt="Team meeting"
-                className="rounded-xl h-full object-cover"
+                className="rounded-xl object-cover"
               />
               <img
                 src={smartIntegration}
                 alt="Office space"
-                className="rounded-xl h-full object-cover"
+                className="rounded-xl object-cover"
               />
             </div>
           </div>
