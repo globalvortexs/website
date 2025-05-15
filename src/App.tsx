@@ -1,16 +1,11 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, Card, CardBody, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@heroui/react";
 import { Icon } from "@iconify/react";
-import { Hero } from "./components/hero";
-import { Services } from "./components/services";
-import { About } from "./components/about";
-import { Footer } from "./components/footer";
-import { ContactForm } from "./components/contact-form";
-import { ThemeSwitcher } from "./components/theme-switcher";
-import { LanguageSwitcher } from "./components/language-switcher";
 import { useTranslation } from "react-i18next";
-import IconVortex from "./assets/icon-vortex.png";
-import "./i18n";
+import { Hero, Products, About, Services, ContactForm, ContactInfo } from "./components/sections";
+import { Footer } from "./components/layout";
+import { ThemeSwitcher, LanguageSwitcher } from "./components/common";
+import { SectionHeader } from "./components/ui";
 
 export default function App() {
   const { t } = useTranslation();
@@ -21,7 +16,7 @@ export default function App() {
       {/* Navigation */}
       <Navbar 
         maxWidth="xl" 
-        className="bg-background/80 backdrop-blur-md border-b border-divider"
+        className="bg-background/95 backdrop-blur-md border-b border-divider sticky top-0 z-40"
         onMenuOpenChange={setIsMenuOpen}
         isBordered
       >
@@ -32,7 +27,7 @@ export default function App() {
         <NavbarBrand>
           <div className="flex items-center gap-3">
             <div className="p-1.5 rounded-lg">
-              <img src={IconVortex} alt="Logo" className="w-10" />
+              <img src="/assets/icon-vortex.png" alt="Logo" className="w-10" />
             </div>
             <div>
               <p className="font-bold text-xl text-inherit tracking-tight">Global Vortex</p>
@@ -48,7 +43,7 @@ export default function App() {
               underline="hover"
               className="font-medium flex items-center gap-1.5"
             >
-              <Icon icon="lucide:home" className="text-default-500" width={18} height={18} />
+              <Icon icon="lucide:home" className="text-default-500 text-lg" />
               {t('nav.home')}
             </Link>
           </NavbarItem>
@@ -59,8 +54,19 @@ export default function App() {
               underline="hover"
               className="font-medium flex items-center gap-1.5"
             >
-              <Icon icon="lucide:briefcase" className="text-default-500" width={18} height={18} />
+              <Icon icon="lucide:settings" className="text-default-500 text-lg" />
               {t('nav.services')}
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link 
+              color="foreground" 
+              href="#products" 
+              underline="hover"
+              className="font-medium flex items-center gap-1.5"
+            >
+              <Icon icon="lucide:layers" className="text-default-500 text-lg" />
+              {t('nav.products')}
             </Link>
           </NavbarItem>
           <NavbarItem>
@@ -70,7 +76,7 @@ export default function App() {
               underline="hover"
               className="font-medium flex items-center gap-1.5"
             >
-              <Icon icon="lucide:info" className="text-default-500" width={18} height={18} />
+              <Icon icon="lucide:info" className="text-default-500 text-lg" />
               {t('nav.about')}
             </Link>
           </NavbarItem>
@@ -84,11 +90,11 @@ export default function App() {
           </NavbarItem>
           <NavbarItem>
             <Button 
-              as={Link} 
-              color="primary" 
-              href="#contact" 
+              as={Link}
+              color="primary"
               variant="shadow"
-              startContent={<Icon icon="lucide:message-circle" width={18} height={18} />}
+              href="#contact"
+              startContent={<Icon icon="lucide:message-circle" className="text-lg" />}
               className="font-medium"
             >
               {t('nav.contactUs')}
@@ -104,7 +110,7 @@ export default function App() {
               className="w-full flex items-center gap-2 py-2"
               size="lg"
             >
-              <Icon icon="lucide:home" className="text-default-500" width={18} height={18} />
+              <Icon icon="lucide:home" className="text-default-500 text-lg" />
               {t('nav.home')}
             </Link>
           </NavbarMenuItem>
@@ -115,8 +121,19 @@ export default function App() {
               className="w-full flex items-center gap-2 py-2"
               size="lg"
             >
-              <Icon icon="lucide:briefcase" className="text-default-500" width={18} height={18} />
+              <Icon icon="lucide:settings" className="text-default-500 text-lg" />
               {t('nav.services')}
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link 
+              color="foreground" 
+              href="#products" 
+              className="w-full flex items-center gap-2 py-2"
+              size="lg"
+            >
+              <Icon icon="lucide:layers" className="text-default-500 text-lg" />
+              {t('nav.products')}
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
@@ -126,19 +143,8 @@ export default function App() {
               className="w-full flex items-center gap-2 py-2"
               size="lg"
             >
-              <Icon icon="lucide:info" className="text-default-500" width={18} height={18} />
+              <Icon icon="lucide:info" className="text-default-500 text-lg" />
               {t('nav.about')}
-            </Link>
-          </NavbarMenuItem>
-          <NavbarMenuItem>
-            <Link 
-              color="foreground" 
-              href="#testimonials" 
-              className="w-full flex items-center gap-2 py-2"
-              size="lg"
-            >
-              <Icon icon="lucide:message-square-quote" className="text-default-500" width={18} height={18} />
-              {t('nav.testimonials')}
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem className="mt-5">
@@ -151,113 +157,43 @@ export default function App() {
       </Navbar>
 
       {/* Main Content */}
-      <main>
+      <main className="overflow-x-hidden">
         {/* Hero Section */}
         <section id="home">
           <Hero />
         </section>
 
         {/* Services Section */}
-        <section id="services" className="py-20 bg-content1">
+        <section id="services" className="py-20 bg-background">
           <Services />
         </section>
 
+        {/* Products Section */}
+        <section id="products" className="py-20 bg-content1">
+          <Products />
+        </section>
+
         {/* About Section */}
-        <section id="about" className="py-20">
+        <section id="about" className="py-20 bg-background">
           <About />
         </section>
 
-        {/* Testimonials Section */}
-        {/* <section id="testimonials" className="py-20 bg-content1">
-          <Testimonials />
-        </section> */}
-
         {/* Contact Section */}
-        <section id="contact" className="py-20">
+        <section id="contact" className="py-16 md:py-20 bg-content1">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">{t('contact.title')}</h2>
-              <p className="text-default-600 max-w-2xl mx-auto">
-                {t('contact.subtitle')}
-              </p>
-            </div>
+            <SectionHeader
+              title={t('contact.title')}
+              subtitle={t('contact.subtitle')}
+            />
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 max-w-6xl mx-auto">
               <Card shadow="md">
-                <CardBody className="p-8">
+                <CardBody className="p-6 md:p-8">
                   <ContactForm />
                 </CardBody>
               </Card>
 
-              <div className="flex flex-col justify-center">
-                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                
-                <div className="space-y-6">
-                  {/* <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Icon icon="lucide:map-pin" className="text-primary text-xl" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Address</h4>
-                      <p className="text-default-600">
-                        1234 Business Avenue, Suite 500<br />
-                        São Paulo, SP 01234-567
-                      </p>
-                    </div>
-                  </div> */}
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Icon icon="lucide:phone" className="text-primary text-xl" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Phone</h4>
-                      <p className="text-default-600">+55 (11) 1234-5678</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Icon icon="lucide:mail" className="text-primary text-xl" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Email</h4>
-                      <p className="text-default-600">contact@globalvortex.com</p>
-                    </div>
-                  </div>
-                  
-                  {/* <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Icon icon="lucide:clock" className="text-primary text-xl" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Business Hours</h4>
-                      <p className="text-default-600">
-                        Monday - Friday: 9:00 AM - 6:00 PM<br />
-                        Saturday: 10:00 AM - 2:00 PM
-                      </p>
-                    </div>
-                  </div> */}
-                </div>
-                
-                <div className="mt-10">
-                  <h4 className="font-semibold mb-3">Follow Us</h4>
-                  <div className="flex gap-4">
-                    <Button isIconOnly variant="light" aria-label="LinkedIn">
-                      <Icon icon="lucide:linkedin" className="text-xl" />
-                    </Button>
-                    <Button isIconOnly variant="light" aria-label="Twitter">
-                      <Icon icon="lucide:twitter" className="text-xl" />
-                    </Button>
-                    <Button isIconOnly variant="light" aria-label="Facebook">
-                      <Icon icon="lucide:facebook" className="text-xl" />
-                    </Button>
-                    <Button isIconOnly variant="light" aria-label="Instagram">
-                      <Icon icon="lucide:instagram" className="text-xl" />
-                    </Button>
-                  </div>
-                </div>
-              </div>
+              <ContactInfo />
             </div>
           </div>
         </section>

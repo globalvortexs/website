@@ -17,52 +17,30 @@ export default {
   darkMode: "class",
   plugins: [
     heroui({
+      layout: {
+        radius: {
+          small: "4px",
+          medium: "6px",
+          large: "8px",
+        },
+      },
       themes: {
         light: {
           colors: {
             primary: {
-              50: "#eef2ff",
-              100: "#e0e7ff",
-              200: "#c7d2fe",
-              300: "#a5b4fc",
-              400: "#818cf8",
-              500: "#6366f1",
-              600: "#4f46e5",
-              700: "#4338ca",
-              800: "#3730a3",
-              900: "#312e81",
-              DEFAULT: "#4f46e5",
-              foreground: "#ffffff"
+              50: "#EBF5FF",
+              100: "#D6EBFF",
+              200: "#ADD6FF",
+              300: "#85C2FF",
+              400: "#5CADFF",
+              500: "#3399FF",
+              600: "#2A7ACC",
+              700: "#205C99",
+              800: "#153D66",
+              900: "#0A1F33",
+              DEFAULT: "#3399FF",
+              foreground: "#FFFFFF"
             },
-          }
-        },
-        dark: {
-          colors: {
-            primary: {
-              50: "#eef2ff",
-              100: "#e0e7ff",
-              200: "#c7d2fe",
-              300: "#a5b4fc",
-              400: "#818cf8",
-              500: "#6366f1",
-              600: "#4f46e5",
-              700: "#4338ca",
-              800: "#3730a3",
-              900: "#312e81",
-              DEFAULT: "#6366f1",
-              foreground: "#ffffff"
-            },
-            background: {
-              DEFAULT: "#0F1115"
-            },
-            content1: {
-              DEFAULT: "#161920",
-              foreground: "#ECEDEE"
-            },
-            content2: {
-              DEFAULT: "#1C2028",
-              foreground: "#ECEDEE"
-            }
           }
         }
       }
