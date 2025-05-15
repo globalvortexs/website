@@ -93,7 +93,7 @@ export const ContactForm = () => {
       
       // Criando o objeto de dados para enviar o email no formato exato que a API SMTP2GO espera
       const emailData = {
-        api_key: import.meta.env.VITE_SMTP2GO_API_KEY,
+        api_key: "api-B2D23EE73D9343BB89154580ECDDBD2E",
         to: [`Global Vortex - Website <${import.meta.env.VITE_EMAIL_CONTACT}>`],
         sender: `Global Vortex - Website <${import.meta.env.VITE_EMAIL_CONTACT}>`,
         template_id: "7468142",
