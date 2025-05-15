@@ -1,4 +1,3 @@
-import React from "react";
 import { Switch, Tooltip } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useTheme } from "@heroui/use-theme";

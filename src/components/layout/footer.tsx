@@ -1,4 +1,4 @@
-import { Link, Divider, Button } from "@heroui/react";
+import { Divider, Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";
 import { COMPANY_NAME, SOCIAL_LINKS } from "../../lib/utils/constants";

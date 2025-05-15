@@ -17,10 +17,9 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   centered = true
 }) => {
   return (
-    <div className={`mb-12 md:mb-16 ${centered ? 'text-center' : ''}`}>
-      {tagline && (
+    <div className={`mb-12 md:mb-16 ${centered ? 'text-center' : ''}`}>      {tagline && (
         <div className={`inline-flex items-center px-3 py-1 mb-4 rounded-full bg-primary/10 text-primary text-sm font-medium ${centered ? 'mx-auto' : ''}`}>
-          {taglineIcon && <Icon icon={taglineIcon} className="mr-2" size={16} />}
+          {taglineIcon && <Icon icon={taglineIcon} className="mr-2 text-base" width={16} height={16} />}
           {tagline}
         </div>
       )}
