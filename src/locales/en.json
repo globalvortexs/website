@@ -1,134 +1,139 @@
 {
-  "nav": {
-    "home": "Home",
-    "services": "Services",
-    "about": "About",
-    "testimonials": "Testimonials",
-    "contactUs": "Contact Us"
-  },
-  "hero": {
-    "title": "Transforming Ideas into Global Success",
-    "subtitle": "Global Vortex Solutions empowers businesses with smart technology and tailored solutions. We combine innovation, integration, and monitoring to turn your challenges into real growth. Partner with us and take your business to the next level with the power of Nucleus.",
-    "getStarted": "Get Started",
-    "ourServices": "Our Services",
-    "clients": "satisfied clients worldwide"
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "We offer a comprehensive range of services designed to help your business thrive in today's competitive landscape.",
-    "learnMore": "Learn More",
-    "discussProject": "Discuss Your Project",
-    "items": [
-      {
-        "title": "Business Strategy",
-        "description": "Develop comprehensive business strategies to achieve your goals and maximize growth potential."
-      },
-      {
-        "title": "Global Expansion",
-        "description": "Navigate international markets with our expertise in global business development and localization."
-      },
-      {
-        "title": "Digital Transformation",
-        "description": "Modernize your business with cutting-edge digital solutions tailored to your specific needs."
-      },
-      {
-        "title": "Talent Management",
-        "description": "Optimize your workforce with our strategic recruitment and employee development programs."
-      },
-      {
-        "title": "Market Analysis",
-        "description": "Gain valuable insights with our in-depth market research and competitive analysis services."
-      },
-      {
-        "title": "Risk Management",
-        "description": "Identify and mitigate potential risks with our comprehensive risk assessment strategies."
-      }
-    ]
-  },
-  "about": {
-    "title": "About Global Vortex",
-    "paragraph1": "Global Vortex Solutions was founded with the mission to turn ideas into intelligent, scalable digital solutions. We specialize in custom application development and IT services, delivering high-performance technology for companies ready to evolve in the digital era.",
-    "paragraph2": "Our standout innovation is Nucleus, an integration and application monitoring platform that connects systems, detects failures in real time, and enhances operational control.",
-    "paragraph3": "With a skilled and passionate team, we deliver tailored projects focused on results, innovation, and long-term growth.",
-    "features": [
-      {
-        "title": "Results-Driven Approach",
-        "description": "Solutions aligned with your business goals — fast, efficient, and effective."
-      },
-      {
-        "title": "Smart Integration",
-        "description": "Nucleus connects your systems and monitors applications in real time."
-      },
-      {
-        "title": "Cutting-Edge Technology",
-        "description": "We use modern tools and methods to build robust, future-ready solutions."
-      },
-      {
-        "title": "Future-Focused Vision",
-        "description": "We design scalable solutions that grow with your business."
-      }
-    ]
-  },
-  "testimonials": {
-    "title": "What Our Clients Say",
-    "subtitle": "Don't just take our word for it. Here's what our clients have to say about working with Global Vortex."
-  },
-  "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Have a project in mind? Contact us and let's create something amazing together.",
-    "form": {
-      "title": "Send Us a Message",
-      "fullName": "Full Name",
-      "email": "Email",
-      "phone": "Phone Number",
-      "company": "Company",
-      "message": "Message",
-      "messagePlaceholder": "How can we help you?",
-      "consent": "I agree to the processing of my personal data in accordance with the Privacy Policy",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "success": {
-        "title": "Message Sent!",
-        "message": "Thank you for contacting us. We'll get back to you shortly."
-      }
+    "nav": {
+        "home": "Home",
+        "products": "Products",
+        "about": "About",
+        "contactUs": "Contact Us",
+        "services": "Services"
     },
-    "info": {
-      "title": "Contact Information",
-      "address": {
-        "label": "Address",
-        "value": "1234 Business Avenue, Suite 500\nSão Paulo, SP 01234-567"
-      },
-      "phone": {
-        "label": "Phone",
-        "value": "+55 (11) 1234-5678"
-      },
-      "email": {
-        "label": "Email",
-        "value": "contact@globalvortex.com"
-      },
-      "hours": {
-        "label": "Business Hours",
-        "value": "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 2:00 PM"
-      },
-      "followUs": "Follow Us"
+    "hero": {
+        "tagline": "Enterprise Solutions",
+        "title": "Transforming Ideas into",
+        "titleHighlight": "Global Success",
+        "subtitle": "Global Vortex Solutions empowers businesses with intelligent technology and tailored solutions. We combine innovation, integration, and monitoring to transform your challenges into real growth. Become our partner and take your business to a new level with the power of Nucleus.",
+        "ourProducts": "Our Products",
+        "contactUs": "Contact Us",
+        "dashboardImage": "Enterprise Dashboard"
+    },    "services": {
+        "title": "Our Services",
+        "subtitle": "We offer comprehensive IT solutions to drive digital transformation and operational efficiency for your business.",
+        "learnMore": "Learn More",
+        "discussProject": "Discuss Your Project",
+        "tagline": "Technology Solutions",
+        "items": [
+            {
+                "title": "Software Development",
+                "description": "We create custom solutions with best-in-class engineering practices and modern architecture for your specific needs."
+            },
+            {
+                "title": "Data Management",
+                "description": "We deploy robust database systems, big data analytics, and data warehouse solutions to optimize your operations."
+            },
+            {
+                "title": "Cloud Computing",
+                "description": "Cloud infrastructure migration and management focused on scalability, security, and cost optimization."
+            },
+            {
+                "title": "Cybersecurity",
+                "description": "Protect your digital assets with our advanced security solutions, penetration testing, and continuous monitoring."
+            },
+            {
+                "title": "Business Intelligence",
+                "description": "Transform data into actionable insights with custom dashboards, advanced reporting, and predictive analytics."
+            },
+            {
+                "title": "IT Infrastructure",
+                "description": "Design, implement, and manage high-performance IT infrastructure with proactive monitoring and 24/7 support."
+            }
+        ]
+    },
+    "products": {
+        "title": "Our Product",
+        "subtitle": "Discover Nucleus, our innovative integration and monitoring solution.",
+        "tagline": "Enterprise Solution",
+        "learnMore": "Learn More",
+        "nucleus": {
+            "slogan": "The core of your digital infrastructure.",
+            "description": "A tool that creates integrations more efficiently along with monitoring of these integrations.",
+            "features": {
+                "integration": "Quick integration with various systems",
+                "monitoring": "Real-time monitoring",
+                "dashboard": "Intuitive control panel",
+                "reports": "Detailed reports"
+            }
+        }
+    },
+    "about": {
+        "tagline": "Our Story",
+        "title": "About Global Vortex",
+        "paragraph1": "Global Vortex Solutions was born with the mission to transform ideas into intelligent and scalable digital solutions. We specialize in developing applications and IT services, offering high-performance technology for companies that want to evolve securely in the digital landscape.",
+        "paragraph2": "Our biggest differentiator is Nucleus, an integration and monitoring platform for applications that connects systems, identifies failures in real-time, and elevates operational control of businesses. With an experienced team, we deliver personalized projects focused on results, innovation, and scalability.",
+        "features": [
+            {
+                "title": "Results Focused",
+                "description": "Solutions aligned with your business objectives, with agility and efficiency."
+            },
+            {
+                "title": "Intelligent Integration",
+                "description": "Nucleus connects your systems and monitors applications in real-time."
+            },
+            {
+                "title": "Cutting-Edge Technology",
+                "description": "We apply modern methodologies to create robust and sustainable solutions."
+            },
+            {
+                "title": "Future Vision",
+                "description": "We think about and develop solutions that grow alongside you."
+            }
+        ],
+        "images": {
+            "office": "Office",
+            "teamMeeting": "Team meeting",
+            "officeSpace": "Office space"
+        }
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Have questions or need more information? Contact us today and our team will be happy to assist you.",
+        "form": {
+            "title": "Send us a Message",
+            "fullName": "Full Name",
+            "email": "Email",
+            "phone": "Phone (optional)",
+            "company": "Company (optional)",
+            "message": "Message",
+            "messagePlaceholder": "How can we help you?",
+            "consent": "I agree to the processing of my personal data in accordance with the privacy policy.",
+            "send": "Send Message",
+            "sending": "Sending...",
+            "errors": {
+                "title": "Error",
+                "nameRequired": "Name is required",
+                "emailRequired": "Email is required",
+                "emailInvalid": "Please enter a valid email address",
+                "messageRequired": "Message is required",
+                "consentRequired": "You must agree to the terms"
+            },
+            "success": {
+                "title": "Thank You!",
+                "message": "Your message has been sent successfully. We\u0027ll get back to you shortly."
+            }
+        },
+        "info": {
+            "title": "Contact Information",
+            "phone": {
+                "label": "Phone",
+                "value": "+1 (555) 123-4567"
+            },
+            "email": {
+                "label": "Email",
+                "value": "contact@globalvortexs.com"
+            },
+            "followUs": "Follow Us"
+        }
+    },
+    "footer": {
+        "description": "Empowering businesses to achieve global success through innovative solutions and strategic expertise.",
+        "rights": "All rights reserved."
     }
-  },
-  "footer": {
-    "description": "Empowering businesses to achieve global success through innovative solutions and strategic expertise.",
-    "services": "Services",
-    "company": "Company",
-    "legal": "Legal",
-    "rights": "All rights reserved.",
-    "links": {
-      "about": "About Us",
-      "team": "Our Team",
-      "careers": "Careers",
-      "blog": "Blog",
-      "contact": "Contact",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "cookies": "Cookie Policy",
-      "gdpr": "GDPR Compliance"
-    }
-  }
 }

@@ -7,4 +7,5 @@ export default defineConfig({
   server: {
     allowedHosts: true,
   },
+  base: '/', // Define a base URL como raiz para domínio personalizado
 });

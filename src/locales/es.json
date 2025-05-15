@@ -1,0 +1,140 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "products": "Productos",
+        "about": "Acerca de",
+        "contactUs": "Contacto",
+        "services": "Servicios"
+    },
+    "hero": {
+        "tagline": "Soluciones Empresariales",
+        "title": "Transformando Ideas en",
+        "titleHighlight": "Éxito Global",
+        "subtitle": "Global Vortex Solutions impulsa empresas con tecnología inteligente y soluciones a medida. Unimos innovación, integración y monitoreo para transformar sus desafíos en crecimiento real. Sea nuestro socio y lleve su negocio a un nuevo nivel con el poder de Nucleus.",
+        "ourProducts": "Nuestros Productos",
+        "contactUs": "Contáctenos",
+        "dashboardImage": "Dashboard Empresarial"
+    },    "services": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Ofrecemos soluciones de TI integrales para impulsar la transformación digital y la eficiencia operativa de su empresa.",
+        "learnMore": "Más Información",
+        "discussProject": "Discutir Su Proyecto",
+        "tagline": "Soluciones Tecnológicas",
+        "items": [
+            {
+                "title": "Desarrollo de Software",
+                "description": "Creamos soluciones personalizadas con las mejores prácticas de ingeniería y arquitectura moderna para sus necesidades específicas."
+            },
+            {
+                "title": "Gestión de Datos",
+                "description": "Implementamos sistemas de bases de datos robustos, análisis de big data y soluciones de data warehouse para optimizar sus operaciones."
+            },
+            {
+                "title": "Computación en la Nube",
+                "description": "Migración y gestión de infraestructura en la nube con foco en escalabilidad, seguridad y optimización de costos."
+            },
+            {
+                "title": "Ciberseguridad",
+                "description": "Proteja sus activos digitales con nuestras soluciones de seguridad avanzada, pruebas de penetración y monitoreo continuo."
+            },
+            {
+                "title": "Inteligencia Empresarial",
+                "description": "Transforme datos en información accionable con dashboards personalizados, informes avanzados y análisis predictivo."
+            },
+            {
+                "title": "Infraestructura de TI",
+                "description": "Diseñe, implemente y gestione infraestructura de TI de alto rendimiento con monitoreo proactivo y soporte 24/7."
+            }
+        ]
+    },
+    "products": {
+        "title": "Nuestro Producto",
+        "subtitle": "Descubra Nucleus, nuestra innovadora solución de integración y monitoreo.",
+        "tagline": "Solución Empresarial",
+        "learnMore": "Más Información",
+        "nucleus": {
+            "slogan": "El núcleo de su infraestructura digital.",
+            "description": "Una herramienta que crea integraciones de manera más eficiente junto con el monitoreo de estas integraciones.",
+            "features": {
+                "integration": "Integración rápida con varios sistemas",
+                "monitoring": "Monitoreo en tiempo real",
+                "dashboard": "Panel de control intuitivo",
+                "reports": "Informes detallados"
+            }
+        }
+    },
+    "about": {
+        "tagline": "Nuestra Historia",
+        "title": "Acerca de Global Vortex",
+        "paragraph1": "Global Vortex Solutions nació con la misión de transformar ideas en soluciones digitales inteligentes y escalables. Somos especialistas en desarrollo de aplicaciones y servicios de TI, ofreciendo tecnología de alto rendimiento para empresas que desean evolucionar con seguridad en el escenario digital.",
+        "paragraph2": "Nuestro gran diferencial es Nucleus, una plataforma de integración y monitoreo de aplicaciones que conecta sistemas, identifica fallos en tiempo real y eleva el control operativo de las empresas. Con un equipo experimentado, entregamos proyectos personalizados con enfoque en resultados, innovación y escalabilidad.",
+        "features": [
+            {
+                "title": "Enfoque en Resultados",
+                "description": "Soluciones alineadas con sus objetivos de negocio, con agilidad y eficiencia."
+            },
+            {
+                "title": "Integración Inteligente",
+                "description": "Nucleus conecta sus sistemas y monitorea aplicaciones en tiempo real."
+            },
+            {
+                "title": "Tecnología de Vanguardia",
+                "description": "Aplicamos metodologías modernas para crear soluciones robustas y sostenibles."
+            },
+            {
+                "title": "Visión de Futuro",
+                "description": "Pensamos y desarrollamos soluciones que crecen junto a usted."
+            }
+        ],
+        "images": {
+            "office": "Oficina",
+            "teamMeeting": "Reunión de equipo",
+            "officeSpace": "Espacio de oficina"
+        }
+    },
+    "contact": {
+        "title": "Póngase en Contacto",
+        "subtitle": "¿Tiene preguntas o necesita más información? Contáctenos hoy y nuestro equipo estará encantado de ayudarle.",
+        "form": {
+            "title": "Envíenos un Mensaje",
+            "fullName": "Nombre Completo",
+            "email": "Correo Electrónico",
+            "phone": "Teléfono (opcional)",
+            "company": "Empresa (opcional)",
+            "message": "Mensaje",
+            "messagePlaceholder": "¿Cómo podemos ayudarle?",
+            "consent": "Acepto el procesamiento de mis datos personales de acuerdo con la política de privacidad.",
+            "send": "Enviar Mensaje",
+            "sending": "Enviando...",
+            "errors": {
+                "title": "Error",
+                "nameRequired": "El nombre es obligatorio",
+                "emailRequired": "El correo electrónico es obligatorio",
+                "emailInvalid": "Por favor, introduzca una dirección de correo electrónico válida",
+                "messageRequired": "El mensaje es obligatorio",
+                "consentRequired": "Debe aceptar los términos"
+            },
+            "success": {
+                "title": "¡Gracias!",
+                "message": "Su mensaje ha sido enviado con éxito. Nos pondremos en contacto con usted en breve."
+            }
+        },
+        "info": {
+            "title": "Información de Contacto",
+            "phone": {
+                "label": "Teléfono",
+                "value": "+1 (555) 123-4567"
+            },
+            "email": {
+                "label": "Correo Electrónico",
+                "value": "contact@globalvortexs.com"
+            },
+            "followUs": "Síganos"
+        }
+    },
+    "footer": {
+        "description": "Capacitando a las empresas para lograr el éxito global a través de soluciones innovadoras y experiencia estratégica.",
+        "services": "Servicios",
+        "rights": "Todos los derechos reservados."
+    }
+}

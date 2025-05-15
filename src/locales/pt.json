@@ -1,134 +1,140 @@
 {
-  "nav": {
-    "home": "Início",
-    "services": "Serviços",
-    "about": "Sobre",
-    "testimonials": "Depoimentos",
-    "contactUs": "Contato"
-  },
-  "hero": {
-    "title": "Transformando Ideias em Sucesso Global",
-    "subtitle": "A Global Vortex Solutions impulsiona empresas com tecnologia inteligente e soluções sob medida. Unimos inovação, integração e monitoramento para transformar seus desafios em crescimento real. Seja nosso parceiro e leve seu negócio a um novo patamar com o poder do Nucleus.",
-    "getStarted": "Começar Agora",
-    "ourServices": "Nossos Serviços",
-    "clients": "clientes satisfeitos em todo o mundo"
-  },
-  "services": {
-    "title": "Nossos Serviços",
-    "subtitle": "Oferecemos uma gama abrangente de serviços projetados para ajudar seu negócio a prosperar no competitivo cenário atual.",
-    "learnMore": "Saiba Mais",
-    "discussProject": "Discutir Seu Projeto",
-    "items": [
-      {
-        "title": "Estratégia de Negócios",
-        "description": "Desenvolva estratégias de negócios abrangentes para atingir seus objetivos e maximizar o potencial de crescimento."
-      },
-      {
-        "title": "Expansão Global",
-        "description": "Navegue pelos mercados internacionais com nossa expertise em desenvolvimento de negócios globais e localização."
-      },
-      {
-        "title": "Transformação Digital",
-        "description": "Modernize seu negócio com soluções digitais de ponta adaptadas às suas necessidades específicas."
-      },
-      {
-        "title": "Gestão de Talentos",
-        "description": "Otimize sua força de trabalho com nossos programas estratégicos de recrutamento e desenvolvimento de funcionários."
-      },
-      {
-        "title": "Análise de Mercado",
-        "description": "Obtenha insights valiosos com nossa pesquisa de mercado aprofundada e serviços de análise competitiva."
-      },
-      {
-        "title": "Gestão de Riscos",
-        "description": "Identifique e mitigue riscos potenciais com nossas estratégias abrangentes de avaliação de riscos."
-      }
-    ]
-  },
-  "about": {
-    "title": "Sobre a Global Vortex",
-    "paragraph1": "A Global Vortex Solutions nasceu com a missão de transformar ideias em soluções digitais inteligentes e escaláveis. Somos especialistas em desenvolvimento de aplicações e serviços de TI, oferecendo tecnologia de alto desempenho para empresas que desejam evoluir com segurança no cenário digital.",
-    "paragraph2": "Nosso grande diferencial é o Nucleus, uma plataforma de integração e monitoramento de aplicações que conecta sistemas, identifica falhas em tempo real e eleva o controle operacional das empresas.",
-    "paragraph3": "Com uma equipe experiente, entregamos projetos personalizados com foco em resultados, inovação e escalabilidade.",
-    "features": [
-      {
-        "title": "Foco em Resultados",
-        "description": "Soluções alinhadas aos seus objetivos de negócio, com agilidade e eficiência."
-      },
-      {
-        "title": "Integração Inteligente",
-        "description": "O Nucleus conecta seus sistemas e monitora aplicações em tempo real."
-      },
-      {
-        "title": "Tecnologia de Ponta",
-        "description": "Aplicamos metodologias modernas para criar soluções robustas e sustentáveis."
-      },
-      {
-        "title": "Visão de Futuro",
-        "description": "Pensamos e desenvolvemos soluções que crescem junto com você."
-      }
-    ]
-  },
-  "testimonials": {
-    "title": "O Que Nossos Clientes Dizem",
-    "subtitle": "Não acredite apenas em nossa palavra. Veja o que nossos clientes têm a dizer sobre trabalhar com a Global Vortex."
-  },
-  "contact": {
-    "title": "Entre em Contato",
-    "subtitle": "Tem um projeto em mente? Entre em contato conosco e vamos criar algo incrível juntos.",
-    "form": {
-      "title": "Envie-nos uma Mensagem",
-      "fullName": "Nome Completo",
-      "email": "E-mail",
-      "phone": "Telefone",
-      "company": "Empresa",
-      "message": "Mensagem",
-      "messagePlaceholder": "Como podemos ajudar você?",
-      "consent": "Concordo com o processamento dos meus dados pessoais de acordo com a Política de Privacidade",
-      "send": "Enviar Mensagem",
-      "sending": "Enviando...",
-      "success": {
-        "title": "Mensagem Enviada!",
-        "message": "Obrigado por entrar em contato. Retornaremos em breve."
-      }
+    "nav": {
+        "home": "Início",
+        "products": "Produtos",
+        "about": "Sobre",
+        "contactUs": "Contato",
+        "services": "Serviços"
     },
-    "info": {
-      "title": "Informações de Contato",
-      "address": {
-        "label": "Endereço",
-        "value": "Avenida Negócios 1234, Sala 500\nSão Paulo, SP 01234-567"
-      },
-      "phone": {
-        "label": "Telefone",
-        "value": "+55 (11) 1234-5678"
-      },
-      "email": {
-        "label": "E-mail",
-        "value": "contato@globalvortex.com"
-      },
-      "hours": {
-        "label": "Horário de Funcionamento",
-        "value": "Segunda - Sexta: 9:00 - 18:00\nSábado: 10:00 - 14:00"
-      },
-      "followUs": "Siga-nos"
+    "hero": {
+        "tagline": "Soluções Empresariais",
+        "title": "Transformando Ideias em",
+        "titleHighlight": "Sucesso Global",
+        "subtitle": "A Global Vortex Solutions impulsiona empresas com tecnologia inteligente e soluções sob medida. Unimos inovação, integração e monitoramento para transformar seus desafios em crescimento real. Seja nosso parceiro e leve seu negócio a um novo patamar com o poder do Nucleus.",
+        "ourProducts": "Nossos Produtos",
+        "contactUs": "Fale Conosco",
+        "dashboardImage": "Dashboard Empresarial"
+    },    "services": {
+        "title": "Nossos Serviços",
+        "subtitle": "Oferecemos soluções completas de TI para impulsionar a transformação digital e eficiência operacional da sua empresa.",
+        "learnMore": "Saiba Mais",
+        "discussProject": "Discutir Seu Projeto",
+        "tagline": "Soluções Tecnológicas",
+        "items": [
+            {
+                "title": "Desenvolvimento de Software",
+                "description": "Criamos soluções personalizadas com as melhores práticas de engenharia e arquitetura moderna para suas necessidades específicas."
+            },
+            {
+                "title": "Gerenciamento de Dados",
+                "description": "Implantamos sistemas de banco de dados robustos, análise de big data e soluções de data warehouse para otimizar suas operações."
+            },
+            {
+                "title": "Cloud Computing",
+                "description": "Migração e gerenciamento de infraestrutura na nuvem com foco em escalabilidade, segurança e otimização de custos."
+            },
+            {
+                "title": "Cibersegurança",
+                "description": "Proteja seus ativos digitais com nossas soluções de segurança avançada, testes de penetração e monitoramento contínuo."
+            },
+            {
+                "title": "Business Intelligence",
+                "description": "Transforme dados em insights acionáveis com dashboards personalizados, relatórios avançados e análise preditiva."
+            },
+            {
+                "title": "Infraestrutura de TI",
+                "description": "Projete, implemente e gerencie infraestrutura de TI de alto desempenho com monitoramento proativo e suporte 24/7."
+            }
+        ]
+    },
+    "products": {
+        "title": "Nosso Produto",
+        "subtitle": "Conheça o Nucleus, nossa solução inovadora de integração e monitoramento.",
+        "tagline": "Solução Empresarial",
+        "learnMore": "Saiba Mais",
+        "nucleus": {
+            "slogan": "O núcleo da sua infraestrutura digital.",
+            "description": "Uma ferramenta que cria integrações de forma mais eficiente e conjunto de uma monitoração dessas integrações.",
+            "features": {
+                "integration": "Integração rápida com diversos sistemas",
+                "monitoring": "Monitoramento em tempo real",
+                "dashboard": "Painel de controle intuitivo",
+                "reports": "Relatórios detalhados"
+            }
+        }
+    },
+    "about": {
+        "tagline": "Nossa História",
+        "title": "Sobre a Global Vortex",
+        "paragraph1": "A Global Vortex Solutions nasceu com a missão de transformar ideias em soluções digitais inteligentes e escaláveis. Somos especialistas em desenvolvimento de aplicações e serviços de TI, oferecendo tecnologia de alto desempenho para empresas que desejam evoluir com segurança no cenário digital.",
+        "paragraph2": "Nosso grande diferencial é o Nucleus, uma plataforma de integração e monitoramento de aplicações que conecta sistemas, identifica falhas em tempo real e eleva o controle operacional das empresas. Com uma equipe experiente, entregamos projetos personalizados com foco em resultados, inovação e escalabilidade.",
+        "features": [
+            {
+                "title": "Foco em Resultados",
+                "description": "Soluções alinhadas aos seus objetivos de negócio, com agilidade e eficiência."
+            },
+            {
+                "title": "Integração Inteligente",
+                "description": "O Nucleus conecta seus sistemas e monitora aplicações em tempo real."
+            },
+            {
+                "title": "Tecnologia de Ponta",
+                "description": "Aplicamos metodologias modernas para criar soluções robustas e sustentáveis."
+            },
+            {
+                "title": "Visão de Futuro",
+                "description": "Pensamos e desenvolvemos soluções que crescem junto com você."
+            }
+        ],
+        "images": {
+            "office": "Escritório",
+            "teamMeeting": "Reunião de equipe",
+            "officeSpace": "Espaço de trabalho"
+        }
+    },
+    "contact": {
+        "title": "Entre em Contato",
+        "subtitle": "Tem perguntas ou precisa de mais informações? Entre em contato hoje e nossa equipe terá prazer em ajudá-lo.",
+        "form": {
+            "title": "Envie-nos uma Mensagem",
+            "fullName": "Nome Completo",
+            "email": "Email",
+            "phone": "Telefone (opcional)",
+            "company": "Empresa (opcional)",
+            "message": "Mensagem",
+            "messagePlaceholder": "Como podemos ajudá-lo?",
+            "consent": "Concordo com o processamento dos meus dados pessoais de acordo com a política de privacidade.",
+            "send": "Enviar Mensagem",
+            "sending": "Enviando...",
+            "errors": {
+                "title": "Erro",
+                "nameRequired": "Nome é obrigatório",
+                "emailRequired": "Email é obrigatório",
+                "emailInvalid": "Por favor, insira um endereço de email válido",
+                "messageRequired": "Mensagem é obrigatória",
+                "consentRequired": "Você deve concordar com os termos"
+            },
+            "success": {
+                "title": "Obrigado!",
+                "message": "Sua mensagem foi enviada com sucesso. Entraremos em contato em breve."
+            }
+        },
+        "info": {
+            "title": "Informações de Contato",
+            "phone": {
+                "label": "Telefone",
+                "value": "+1 (555) 123-4567"
+            },
+            "email": {
+                "label": "Email",
+                "value": "contato@globalvortexs.com"
+            },
+            "followUs": "Siga-nos"
+        }
+    },
+    "footer": {
+        "description": "Capacitando empresas para alcançar sucesso global através de soluções inovadoras e expertise estratégica.",
+        "services": "Serviços",
+        "rights": "Todos os direitos reservados."
     }
-  },
-  "footer": {
-    "description": "Capacitando empresas para alcançar sucesso global através de soluções inovadoras e expertise estratégica.",
-    "services": "Serviços",
-    "company": "Empresa",
-    "legal": "Legal",
-    "rights": "Todos os direitos reservados.",
-    "links": {
-      "about": "Sobre Nós",
-      "team": "Nossa Equipe",
-      "careers": "Carreiras",
-      "blog": "Blog",
-      "contact": "Contato",
-      "terms": "Termos de Serviço",
-      "privacy": "Política de Privacidade",
-      "cookies": "Política de Cookies",
-      "gdpr": "Conformidade com GDPR"
-    }
-  }
 }
