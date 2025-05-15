@@ -38,6 +38,7 @@ jobs:
         cache: 'npm'
 
     - name: Build do projeto React com variáveis
+      run: echo "Variaveis carregando"
       env:
         VITE_SMTP2GO_API_KEY: ${{ secrets.VITE_SMTP2GO_API_KEY }}
         VITE_SMTP2GO_API_URL: ${{ secrets.VITE_SMTP2GO_API_URL }}
