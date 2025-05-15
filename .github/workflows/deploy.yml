@@ -38,10 +38,14 @@ jobs:
         cache: 'npm'
 
     - name: Build do projeto React com variáveis
+      shell: pwsh
       env:
         VITE_SMTP2GO_API_KEY: ${{ secrets.VITE_SMTP2GO_API_KEY }}
         VITE_SMTP2GO_API_URL: ${{ secrets.VITE_SMTP2GO_API_URL }}
-        VITE_EMAIL_CONTACT: ${{ secrets.VITE_EMAIL_CONTACT }}     
+        VITE_EMAIL_CONTACT: ${{ secrets.VITE_EMAIL_CONTACT }}   
+      run: |
+          Write-Host "Iniciando o build com Vite usando variáveis de ambiente..."
+          npm run build  
     # - run: npm ci
     # - run: npm run build --if-present
     # - run: npm test
