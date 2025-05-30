@@ -118,12 +118,11 @@
                 "title": "Thank You!",
                 "message": "Your message has been sent successfully. We\u0027ll get back to you shortly."
             }
-        },
-        "info": {
+        },        "info": {
             "title": "Contact Information",
             "phone": {
                 "label": "Phone",
-                "value": "+1 (555) 123-4567"
+                "value": "+55 61 982643776"
             },
             "email": {
                 "label": "Email",

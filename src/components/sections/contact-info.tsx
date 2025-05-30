@@ -5,14 +5,13 @@ import { SOCIAL_LINKS } from "../../lib";
 
 export const ContactInfo = () => {
   const { t } = useTranslation();
-  
-  const contactItems = [
-    // {
-    //   icon: "lucide:phone",
-    //   label: t('contact.info.phone.label'),
-    //   value: t('contact.info.phone.value'),
-    //   link: `tel:${t('contact.info.phone.value').replace(/\D/g, '')}`
-    // },
+    const contactItems = [
+    {
+      icon: "lucide:phone",
+      label: t('contact.info.phone.label'),
+      value: t('contact.info.phone.value'),
+      link: `tel:${t('contact.info.phone.value').replace(/\D/g, '')}`
+    },
     {
       icon: "lucide:mail",
       label: t('contact.info.email.label'),

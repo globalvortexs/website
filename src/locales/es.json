@@ -118,12 +118,11 @@
                 "title": "¡Gracias!",
                 "message": "Su mensaje ha sido enviado con éxito. Nos pondremos en contacto con usted en breve."
             }
-        },
-        "info": {
+        },        "info": {
             "title": "Información de Contacto",
             "phone": {
                 "label": "Teléfono",
-                "value": "+1 (555) 123-4567"
+                "value": "+55 61 982643776"
             },
             "email": {
                 "label": "Correo Electrónico",
