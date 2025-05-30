@@ -118,16 +118,15 @@
                 "title": "Obrigado!",
                 "message": "Sua mensagem foi enviada com sucesso. Entraremos em contato em breve."
             }
-        },
-        "info": {
+        },        "info": {
             "title": "Informações de Contato",
             "phone": {
                 "label": "Telefone",
-                "value": "+1 (555) 123-4567"
+                "value": "+55 61 982643776"
             },
             "email": {
                 "label": "Email",
-                "value": "contato@globalvortexs.com"
+                "value": "contact@globalvortexs.com"
             },
             "followUs": "Siga-nos"
         }
