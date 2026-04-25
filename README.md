@@ -1,8 +1,10 @@
 # Global Vortex Website
 
-Site institucional da **Global Vortex Solutions** — uma single-page application multilíngue (PT/EN/ES) que apresenta a empresa, os serviços e o produto Nucleus, com página de detalhe dedicada.
+Site institucional da **Global Vortex Solutions** — single-page application multilíngue (PT/EN/ES) que apresenta a empresa, os serviços e o catálogo de produtos (atualmente **Nucleus** e **Mapper240**), com páginas de detalhe dedicadas para cada produto.
 
-> **Stack:** React 18 · Vite 6 · TypeScript · HeroUI · TailwindCSS · framer-motion · i18next
+> **Stack:** React 18 · Vite 6 · TypeScript 5 · HeroUI · TailwindCSS · framer-motion · i18next
+>
+> **Deploy:** [globalvortexs.com](https://globalvortexs.com) via GitHub Pages.
 
 ---
 
@@ -15,6 +17,7 @@ Site institucional da **Global Vortex Solutions** — uma single-page applicatio
 - [Scripts disponíveis](#scripts-disponíveis)
 - [Variáveis de ambiente](#variáveis-de-ambiente)
 - [Decisões arquiteturais](#decisões-arquiteturais)
+- [Roteamento e produtos](#roteamento-e-produtos)
 - [Boas práticas aplicadas](#boas-práticas-aplicadas)
 - [Performance](#performance)
 - [Segurança](#segurança)
@@ -46,28 +49,28 @@ Site institucional da **Global Vortex Solutions** — uma single-page applicatio
 
 ```
 src/
-├── App.tsx                      # router por hash + Suspense + ErrorBoundary
-├── main.tsx                     # bootstrap do React + providers
+├── App.tsx                      # roteador por hash + Suspense + ErrorBoundary
+├── main.tsx                     # bootstrap do React + providers (HeroUI, i18n, theme)
 │
 ├── components/
 │   ├── common/                  # widgets reutilizáveis em qualquer página
 │   │   ├── language-switcher.tsx
-│   │   ├── social-links.tsx     # botões de redes sociais (deduplicado)
+│   │   ├── social-links.tsx     # botões de redes sociais (memoizado)
 │   │   └── theme-switcher.tsx
-│   ├── layout/                  # componentes que aparecem em toda página
+│   ├── layout/                  # componentes presentes em todas as páginas
 │   │   ├── error-boundary.tsx   # captura erros de render e mostra fallback
 │   │   ├── footer.tsx
 │   │   ├── navbar.tsx
 │   │   └── page-loader.tsx      # fallback do Suspense
-│   ├── sections/                # blocos grandes da home + cards de listas
+│   ├── sections/                # blocos grandes da home + cards de listagens
 │   │   ├── about.tsx
 │   │   ├── contact-info.tsx
 │   │   ├── hero.tsx
-│   │   ├── product-card.tsx     # card individual (memoizado)
-│   │   ├── products.tsx         # lista, itera PRODUCTS
+│   │   ├── product-card.tsx     # card individual de produto (memoizado)
+│   │   ├── products.tsx         # grid, itera PRODUCTS
 │   │   ├── service-card.tsx     # card de serviço (memoizado)
 │   │   └── services.tsx         # carrossel
-│   └── ui/                      # primitivos visuais
+│   └── ui/                      # primitivos visuais sem domínio
 │       ├── icon-badge.tsx
 │       └── section-header.tsx
 │
@@ -75,6 +78,7 @@ src/
 │   └── i18n.ts                  # bootstrap do i18next (DEV-aware)
 │
 ├── data/
+│   ├── index.ts
 │   └── products.ts              # catálogo + helper findProductBySlug
 │
 ├── hooks/                       # lógica reutilizável (separada da UI)
@@ -89,9 +93,11 @@ src/
 │   └── pt.json
 │
 ├── pages/                       # uma rota = um arquivo
-│   ├── home.tsx
-│   ├── product-detail.tsx       # lazy
-│   └── product-not-found.tsx    # lazy
+│   ├── home.tsx                 # landing (eager — bundle inicial)
+│   ├── product-detail.tsx       # página genérica para produtos sem layout próprio (lazy)
+│   ├── product-cnab240.tsx      # página dedicada do Mapper240 (lazy)
+│   ├── product-nucleus.tsx      # página dedicada do Nucleus (lazy)
+│   └── product-not-found.tsx    # fallback de slug inexistente (lazy)
 │
 ├── styles/
 │   └── index.css                # tailwind + globals + skip-link
@@ -184,7 +190,7 @@ A aplicação possui poucas páginas e é hospedada em GitHub Pages (que não su
 - `#home`, `#products`, `#contact`, … → âncoras dentro da Home (rolagem suave).
 - `#/produto/:slug` → rota de página (renderiza componente diferente).
 
-A distinção é o prefixo `#/`. Isso evita adicionar uma dependência (~35 kB minified de `react-router`) para um caso de uso simples e mantém compatibilidade com o GH Pages.
+A distinção é o prefixo `#/`. Isso evita adicionar uma dependência (~35 kB minified de `react-router`) para um caso de uso simples e mantém compatibilidade com o GH Pages. O dispatcher fica em `App.tsx` (`renderRoute`) e despacha cada slug para a página específica ou para a página genérica como fallback.
 
 ### Componentização em quatro camadas
 
@@ -214,17 +220,44 @@ Todo conteúdo textual vem de `t('chave')`. Não há strings hard-coded em compo
 
 ---
 
+## Roteamento e produtos
+
+A aplicação distingue dois tipos de produto:
+
+| Tipo | Página | Quando usar |
+| ---- | ------ | ----------- |
+| **Genérico** | `pages/product-detail.tsx` | Produto que precisa só de hero + descrição + lista de features. O layout vem do componente genérico, alimentado por `data/products.ts` e pelas chaves padrão em `products.<slug>.*`. |
+| **Dedicado** | `pages/product-<slug>.tsx` | Produto com narrativa própria — múltiplas seções (Hero customizado, Sobre, Funcionalidades, Diferenciais, Segurança, Stack, CTA). Permite componentes locais como o `HeroPreview`. |
+
+Páginas dedicadas existentes:
+
+- `#/produto/nucleus` → `product-nucleus.tsx` (plataforma de gestão de APIs).
+- `#/produto/cnab240` → `product-cnab240.tsx` (Mapper240, app desktop CNAB240).
+
+O dispatcher de rota em `App.tsx`:
+
+```ts
+if (slug === "cnab240") return <ProductCNAB240Page />;
+if (slug === "nucleus") return <ProductNucleusPage />;
+return <ProductDetailPage slug={slug} />;
+```
+
+Tudo abaixo da home é carregado via `React.lazy` para manter o bundle inicial enxuto.
+
+---
+
 ## Boas práticas aplicadas
 
 - ✅ **Separação UI / lógica** via hooks customizados.
 - ✅ **Barrel exports** por pasta (`index.ts`) para imports limpos.
 - ✅ **Memoização** em componentes de listas (`ProductCard`, `ServiceCard`, `SocialLinks`).
-- ✅ **Code splitting** das páginas secundárias com `React.lazy` + `Suspense`.
+- ✅ **Code splitting**: cada página fora da home vira um chunk separado via `React.lazy` + `Suspense`.
 - ✅ **ErrorBoundary** envolvendo as rotas para capturar erros de render.
 - ✅ **Skip-link** para usuários de teclado.
 - ✅ **Imports ordenados**: externos → internos absolutos → relativos.
 - ✅ **Constantes centralizadas** em `utils/constants.ts`.
-- ✅ **Sem código morto**: removidos `axios`, formulário com API key vazada e placeholders não utilizados.
+- ✅ **Sem strings hard-coded**: todo texto passa por `t()` em `react-i18next`.
+- ✅ **Sem segredos no client**: o formulário de contato com API key SMTP2GO embutida foi removido em favor de redirecionamento para canais externos.
 - ✅ **TypeScript estrito** (`strict`, `noUnusedLocals`, `noUnusedParameters`).
 
 ---
@@ -240,7 +273,7 @@ Todo conteúdo textual vem de `t('chave')`. Não há strings hard-coded em compo
 | **`useMemo` em derivados**    | `useLanguageImage`                          | Recalcula path apenas quando idioma muda.                                                |
 | **Iconify on-demand**         | `@iconify/react`                            | Apenas os ícones realmente usados são incluídos no bundle.                               |
 
-Bundle final (após refactor): **666 kB / 207 kB gzip** + 5 kB (lazy product detail) + 1 kB (lazy not-found).
+> Para o tamanho atual do bundle, rode `npm run build` — a saída do `vite build` lista cada chunk e o ganho de gzip. Cada página em `src/pages/` (exceto `home`) vira um chunk próprio carregado sob demanda.
 
 ---
 
@@ -291,11 +324,15 @@ Adicionar um novo idioma:
 
 ## Adicionando um novo produto
 
+Existem dois caminhos. Use o **modo simples** quando o produto for descrito por hero + descrição + lista de features. Use o **modo dedicado** quando precisar de seções customizadas (segurança, stack, prévia interativa etc.).
+
+### Modo simples (página genérica)
+
 1. **Criar metadata** em `src/data/products.ts`:
 
    ```ts
    export const PRODUCTS: Product[] = [
-     // ...nucleus,
+     // ...nucleus, cnab240,
      {
        slug: "atlas",
        i18nKey: "atlas",
@@ -324,7 +361,45 @@ Adicionar um novo idioma:
 
 3. **Subir os assets** em `public/assets/`.
 
-Pronto — o card aparece automaticamente na home (`/`) e a rota `#/produto/atlas` renderiza a página de detalhe sem código adicional.
+Pronto — o card aparece automaticamente na home e a rota `#/produto/atlas` renderiza a página genérica (`product-detail.tsx`) sem código adicional.
+
+### Modo dedicado (layout próprio)
+
+Quando o produto precisa de uma página com narrativa rica (como o Mapper240 e o Nucleus):
+
+1. Faça os passos 1-3 do modo simples.
+2. **Expandir o bloco de tradução** com as chaves usadas pela página dedicada — as duas existentes seguem este shape:
+
+   ```json
+   "atlas": {
+     "name": "...", "category": "...", "backToHome": "...",
+     "slogan": "...", "description": "...",
+     "hero":          { "tagline": "...", "title": "...", "titleHighlight": "...", "subtitle": "...", "primaryCta": "...", "secondaryCta": "...", "preview": { ... } },
+     "about":         { "tagline": "...", "title": "...", "what": { "title": "...", "description": "..." }, "who": { ... }, "problem": { ... } },
+     "features":      { "tagline": "...", "title": "...", "subtitle": "...", "items": { "<key>": { "title": "...", "description": "..." } } },
+     "differentials": { "tagline": "...", "title": "...", "items": { ... } },
+     "security":      { "tagline": "...", "title": "...", "subtitle": "...", "items": { ... } },
+     "tech":          { "tagline": "...", "title": "...", "subtitle": "..." },
+     "cta":           { "title": "...", "subtitle": "...", "primaryButton": "...", "secondaryButton": "..." }
+   }
+   ```
+
+3. **Criar a página** em `src/pages/product-atlas.tsx`. O caminho mais rápido é copiar `product-nucleus.tsx`, ajustar a constante `baseKey`, as listas (`FEATURES`, `DIFFERENTIALS`, `SECURITY`, `TECH_GROUPS`) e o `HeroPreview`. Manter o `default export` da página.
+4. **Exportar** em `src/pages/index.ts`:
+
+   ```ts
+   export { ProductAtlasPage } from "./product-atlas";
+   ```
+
+5. **Adicionar a rota** em `src/App.tsx`:
+
+   ```ts
+   const ProductAtlasPage = lazy(() => import("./pages/product-atlas"));
+   // …dentro de renderRoute:
+   if (slug === "atlas") return <ProductAtlasPage />;
+   ```
+
+A página entra como chunk separado e só carrega quando o usuário visita `#/produto/atlas`.
 
 ---
 
@@ -339,6 +414,7 @@ Pronto — o card aparece automaticamente na home (`/`) e a rota `#/produto/atla
 - 📊 **Web Vitals** (RUM via web-vitals + endpoint próprio) para monitorar performance real.
 - 🎨 **Storybook** para documentar componentes em `ui/` e `common/`.
 - 🔁 **CI**: GitHub Actions com `npm ci && npm run lint && npm run build`.
+- 🧹 **Limpeza de dependências**: `axios` ainda figura em `package.json` mas não é mais importado em nenhum arquivo — pode ser removido junto com o lock.
 
 ---
 
