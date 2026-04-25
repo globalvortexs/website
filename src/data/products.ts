@@ -34,10 +34,10 @@ export const PRODUCTS: Product[] = [
     image: "/assets/product/product-nucleus.jpg",
     accentBg: "#202c46",
     features: [
-      { key: "integration", icon: "lucide:plug" },
+      { key: "registration", icon: "lucide:plug" },
+      { key: "proxy", icon: "lucide:shield-check" },
       { key: "monitoring", icon: "lucide:activity" },
-      { key: "dashboard", icon: "lucide:layout-dashboard" },
-      { key: "reports", icon: "lucide:file-bar-chart" },
+      { key: "panel", icon: "lucide:layout-dashboard" },
     ],
   },
   {

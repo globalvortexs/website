@@ -73,19 +73,157 @@
             "back": "Volver a los productos"
         },
         "nucleus": {
-            "slogan": "El núcleo de su infraestructura digital.",
-            "description": "Una herramienta que crea integraciones de manera más eficiente junto con el monitoreo de estas integraciones.",
-            "features": {
-                "integration": "Integración rápida con varios sistemas",
-                "monitoring": "Monitoreo en tiempo real",
-                "dashboard": "Panel de control intuitivo",
-                "reports": "Informes detallados"
+            "name": "Nucleus",
+            "category": "Plataforma · Gestión de APIs",
+            "backToHome": "Volver al inicio",
+            "slogan": "Plataforma full-stack para gestión, proxy y monitoreo de integraciones de APIs.",
+            "description": "Centraliza las integraciones con APIs externas detrás de un gateway/proxy inteligente, con observabilidad en tiempo real, autenticación automática y control de acceso de extremo a extremo.",
+            "hero": {
+                "tagline": "Nucleus · Plataforma full-stack",
+                "title": "Centralice, observe y proteja",
+                "titleHighlight": "todas las integraciones de API",
+                "subtitle": "Plataforma full-stack que actúa como gateway y proxy inteligente para sus integraciones con APIs externas — con observabilidad en tiempo real, autenticación automática y control de acceso de extremo a extremo.",
+                "primaryCta": "Solicitar demostración",
+                "secondaryCta": "Hablar con un especialista",
+                "preview": {
+                    "title": "Panel de Integraciones",
+                    "endpoint1Name": "Stripe API",
+                    "endpoint1Path": "POST /v1/payments",
+                    "endpoint1Status": "Online",
+                    "endpoint1Latency": "112ms",
+                    "endpoint2Name": "SendGrid",
+                    "endpoint2Path": "POST /v3/mail/send",
+                    "endpoint2Status": "Online",
+                    "endpoint2Latency": "84ms",
+                    "metric1Label": "Req/min",
+                    "metric1Value": "1.247",
+                    "metric2Label": "Latencia p95",
+                    "metric2Value": "92ms",
+                    "metric3Label": "Uptime",
+                    "metric3Value": "99,98%"
+                }
             },
-            "featuresDescription": {
-                "integration": "Conecte sistemas heterogéneos sin fricción y reduzca el tiempo para entregar nuevas integraciones.",
-                "monitoring": "Siga la salud de las integraciones en tiempo real y reciba alertas antes de que el problema llegue al cliente.",
-                "dashboard": "Tenga una vista centralizada e intuitiva de todas sus integraciones en un único panel.",
-                "reports": "Genere informes detallados para auditoría, análisis de rendimiento y decisiones estratégicas."
+            "about": {
+                "tagline": "Acerca del producto",
+                "title": "Un único punto de control para todas sus integraciones",
+                "what": {
+                    "title": "¿Qué es Nucleus?",
+                    "description": "Plataforma full-stack que combina gateway, proxy y observabilidad en una única herramienta. Centraliza el acceso a APIs externas, aplica autenticación automáticamente y expone métricas, logs y diagnósticos en tiempo real."
+                },
+                "who": {
+                    "title": "Para quién es",
+                    "description": "Empresas que dependen de varias integraciones con APIs externas y necesitan un único lugar para gestionar credenciales, observar comportamiento y diagnosticar fallas con rapidez."
+                },
+                "problem": {
+                    "title": "El problema que resuelve",
+                    "description": "Elimina credenciales dispersas en el código, la falta de visibilidad sobre el tráfico de integración y la dificultad para diagnosticar incidentes. Todo pasa por un proxy auditable con logs y métricas centralizadas."
+                }
+            },
+            "features": {
+                "tagline": "Funcionalidades principales",
+                "title": "Todo lo que su operación de APIs necesita",
+                "subtitle": "Desde el registro del endpoint hasta el diagnóstico en producción — cada capa de Nucleus está pensada para dar autonomía al equipo y seguridad a la operación.",
+                "registration": "Registro de integraciones",
+                "proxy": "Proxy con autenticación automática",
+                "monitoring": "Monitoreo en tiempo real",
+                "panel": "Panel web de gestión",
+                "items": {
+                    "registration": {
+                        "title": "Registro de integraciones y endpoints",
+                        "description": "Catalogue todas las APIs externas en un único lugar, con versionado, configuración por ambiente y metadatos estandarizados."
+                    },
+                    "proxy": {
+                        "title": "Proxy inverso con autenticación automática",
+                        "description": "Nucleus inyecta credenciales y tokens en las llamadas en tiempo de ejecución, dejando a los clientes libres de lógica de autenticación y manejo de secretos."
+                    },
+                    "monitoring": {
+                        "title": "Monitoreo de uptime y salud",
+                        "description": "Siga en tiempo real la disponibilidad y el tiempo de respuesta de cada integración, con alertas antes de que el problema llegue al cliente."
+                    },
+                    "logs": {
+                        "title": "Logs detallados de solicitudes",
+                        "description": "Cada llamada genera un registro auditable con payload, headers, estado y tiempo de respuesta — listo para investigación y cumplimiento."
+                    },
+                    "panel": {
+                        "title": "Panel web para gestión y diagnóstico",
+                        "description": "Interfaz única para configurar integraciones, inspeccionar logs y visualizar métricas, sin acceder al servidor."
+                    },
+                    "accessControl": {
+                        "title": "Control de acceso con JWT",
+                        "description": "Autenticación basada en JWT con perfiles y permisos granulares — cada usuario accede solo a lo que necesita."
+                    },
+                    "licensing": {
+                        "title": "Licencias por instancia",
+                        "description": "Sistema de licencias que controla el uso por instancia y protege la distribución en entornos corporativos."
+                    }
+                }
+            },
+            "differentials": {
+                "tagline": "Diferenciales",
+                "title": "Lo que pone a Nucleus por delante",
+                "items": {
+                    "fullStack": {
+                        "title": "Arquitectura full-stack integrada",
+                        "description": "Frontend en React + TypeScript y backend en Java 21 + Spring Boot — un único producto, cohesivo y mantenido por el mismo equipo."
+                    },
+                    "observability": {
+                        "title": "Observabilidad completa",
+                        "description": "Métricas, logs y diagnóstico en una única plataforma, sin dependencia de herramientas externas."
+                    },
+                    "security": {
+                        "title": "Seguridad robusta",
+                        "description": "JWT, control de acceso por perfil, gestión de licencias y configuración por variables de entorno en todas las capas."
+                    },
+                    "scalability": {
+                        "title": "Escalable a múltiples integraciones",
+                        "description": "Soporta el crecimiento del catálogo de integraciones sin perder rendimiento ni claridad operativa."
+                    },
+                    "centralization": {
+                        "title": "Centralización de APIs externas",
+                        "description": "Un único punto de configuración y gobernanza para todo lo que su aplicación consume del mundo externo."
+                    }
+                }
+            },
+            "security": {
+                "tagline": "La seguridad primero",
+                "title": "Protección en todas las capas",
+                "subtitle": "Cuando el tráfico de integraciones pasa por Nucleus, la seguridad no es opcional. La plataforma fue diseñada con defensa en profundidad, del login al logging.",
+                "items": {
+                    "jwt": {
+                        "title": "Autenticación con JWT",
+                        "description": "Tokens firmados con expiración y renovación controladas — sin sesión en cookie y con fácil integración con SSO."
+                    },
+                    "rbac": {
+                        "title": "Control de acceso por perfil",
+                        "description": "Permisos granulares por endpoint y acción, alineados al modelo de responsabilidades de su organización."
+                    },
+                    "routes": {
+                        "title": "Protección de rutas",
+                        "description": "Cada ruta es validada por middleware en el backend y por guards en el frontend — sin caminos desprotegidos."
+                    },
+                    "licenses": {
+                        "title": "Gestión de licencias",
+                        "description": "Las licencias por instancia evitan el uso fuera de contrato y dan visibilidad del consumo en entornos corporativos."
+                    },
+                    "env": {
+                        "title": "Configuración con variables de entorno",
+                        "description": "Secretos y endpoints sensibles quedan fuera del código — todo vía entorno, con rotación simple y auditable."
+                    }
+                }
+            },
+            "tech": {
+                "tagline": "Stack",
+                "title": "Construido sobre una stack moderna y robusta",
+                "subtitle": "React 19 + TypeScript en el frontend, Java 21 + Spring Boot en el backend y Docker en la infraestructura — opciones pensadas para rendimiento, mantenibilidad y productividad del equipo.",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "infra": "Infra"
+            },
+            "cta": {
+                "title": "¿Listo para centralizar sus integraciones?",
+                "subtitle": "Saque sus APIs externas de la sombra con una plataforma única para configurar, observar y proteger todo el tráfico.",
+                "primaryButton": "Solicitar demostración",
+                "secondaryButton": "Hablar con un especialista"
             }
         },
         "cnab240": {

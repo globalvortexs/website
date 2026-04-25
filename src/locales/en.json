@@ -74,19 +74,157 @@
             "back": "Back to products"
         },
         "nucleus": {
-            "slogan": "The core of your digital infrastructure.",
-            "description": "A tool that creates integrations more efficiently along with monitoring of these integrations.",
-            "features": {
-                "integration": "Quick integration with various systems",
-                "monitoring": "Real-time monitoring",
-                "dashboard": "Intuitive control panel",
-                "reports": "Detailed reports"
+            "name": "Nucleus",
+            "category": "Platform · API Management",
+            "backToHome": "Back to home",
+            "slogan": "Full-stack platform for API integration management, proxy and monitoring.",
+            "description": "Centralizes external API integrations behind a smart gateway/proxy with real-time observability, automatic authentication and end-to-end access control.",
+            "hero": {
+                "tagline": "Nucleus · Full-stack platform",
+                "title": "Centralize, observe and secure",
+                "titleHighlight": "every API integration",
+                "subtitle": "Full-stack platform that acts as a smart gateway and proxy for your external API integrations — with real-time observability, automatic authentication and end-to-end access control.",
+                "primaryCta": "Request a demo",
+                "secondaryCta": "Talk to a specialist",
+                "preview": {
+                    "title": "Integration Dashboard",
+                    "endpoint1Name": "Stripe API",
+                    "endpoint1Path": "POST /v1/payments",
+                    "endpoint1Status": "Online",
+                    "endpoint1Latency": "112ms",
+                    "endpoint2Name": "SendGrid",
+                    "endpoint2Path": "POST /v3/mail/send",
+                    "endpoint2Status": "Online",
+                    "endpoint2Latency": "84ms",
+                    "metric1Label": "Req/min",
+                    "metric1Value": "1,247",
+                    "metric2Label": "p95 latency",
+                    "metric2Value": "92ms",
+                    "metric3Label": "Uptime",
+                    "metric3Value": "99.98%"
+                }
             },
-            "featuresDescription": {
-                "integration": "Connect heterogeneous systems without friction and reduce the time to ship new integrations.",
-                "monitoring": "Track integration health in real time and get alerted before problems reach your customers.",
-                "dashboard": "Get a centralized, intuitive view of every integration in a single panel.",
-                "reports": "Generate detailed reports for auditing, performance analysis and strategic decisions."
+            "about": {
+                "tagline": "About the product",
+                "title": "A single control point for every integration",
+                "what": {
+                    "title": "What is Nucleus?",
+                    "description": "Full-stack platform that combines gateway, proxy and observability into a single tool. Centralizes access to external APIs, applies authentication automatically and exposes metrics, logs and diagnostics in real time."
+                },
+                "who": {
+                    "title": "Who it's for",
+                    "description": "Companies that depend on multiple external API integrations and need a single place to manage credentials, observe behavior and diagnose failures quickly."
+                },
+                "problem": {
+                    "title": "The problem it solves",
+                    "description": "Removes credentials scattered across code, lack of visibility into integration traffic and difficulty diagnosing incidents. Everything goes through an auditable proxy with centralized logs and metrics."
+                }
+            },
+            "features": {
+                "tagline": "Key features",
+                "title": "Everything your API operation needs",
+                "subtitle": "From endpoint registration to production diagnostics — every layer of Nucleus is built to give the team autonomy and the operation security.",
+                "registration": "Integration registry",
+                "proxy": "Proxy with auto auth",
+                "monitoring": "Real-time monitoring",
+                "panel": "Web management panel",
+                "items": {
+                    "registration": {
+                        "title": "Integration and endpoint registry",
+                        "description": "Catalog every external API in one place, with versioning, per-environment configuration and standardized metadata."
+                    },
+                    "proxy": {
+                        "title": "Reverse proxy with automatic authentication",
+                        "description": "Nucleus injects credentials and tokens into calls at runtime, freeing clients from authentication logic and secret handling."
+                    },
+                    "monitoring": {
+                        "title": "Uptime and health monitoring",
+                        "description": "Track each integration's availability and response time in real time, with alerts before the problem reaches your customers."
+                    },
+                    "logs": {
+                        "title": "Detailed request logging",
+                        "description": "Every call generates an auditable record with payload, headers, status and response time — ready for investigation and compliance."
+                    },
+                    "panel": {
+                        "title": "Web panel for management and diagnosis",
+                        "description": "Single interface to configure integrations, inspect logs and visualize metrics, without server access."
+                    },
+                    "accessControl": {
+                        "title": "JWT-based access control",
+                        "description": "JWT authentication with profiles and granular permissions — every user accesses only what they need."
+                    },
+                    "licensing": {
+                        "title": "Per-instance licensing",
+                        "description": "License system that controls usage per instance and protects distribution in corporate environments."
+                    }
+                }
+            },
+            "differentials": {
+                "tagline": "What sets it apart",
+                "title": "What puts Nucleus ahead",
+                "items": {
+                    "fullStack": {
+                        "title": "Integrated full-stack architecture",
+                        "description": "React + TypeScript on the front and Java 21 + Spring Boot on the back — one cohesive product, owned by one team."
+                    },
+                    "observability": {
+                        "title": "Complete observability",
+                        "description": "Metrics, logs and diagnosis in a single platform, with no dependency on external tools."
+                    },
+                    "security": {
+                        "title": "Robust security",
+                        "description": "JWT, profile-based access control, license management and environment-driven config across every layer."
+                    },
+                    "scalability": {
+                        "title": "Scalable to many integrations",
+                        "description": "Supports the integration catalog growing without losing performance or operational clarity."
+                    },
+                    "centralization": {
+                        "title": "Centralized external APIs",
+                        "description": "A single configuration and governance point for everything your application consumes from the outside world."
+                    }
+                }
+            },
+            "security": {
+                "tagline": "Security first",
+                "title": "Protection across every layer",
+                "subtitle": "When integration traffic flows through Nucleus, security isn't optional. The platform is engineered with defense in depth, from login to logging.",
+                "items": {
+                    "jwt": {
+                        "title": "JWT authentication",
+                        "description": "Signed tokens with controlled expiration and refresh — no cookie sessions and easy SSO integration."
+                    },
+                    "rbac": {
+                        "title": "Profile-based access control",
+                        "description": "Granular permissions per endpoint and action, aligned with your organization's responsibility model."
+                    },
+                    "routes": {
+                        "title": "Route protection",
+                        "description": "Every route is validated by backend middleware and frontend guards — no unprotected path."
+                    },
+                    "licenses": {
+                        "title": "License management",
+                        "description": "Per-instance licensing prevents off-contract usage and gives visibility into consumption in corporate environments."
+                    },
+                    "env": {
+                        "title": "Environment variable configuration",
+                        "description": "Secrets and sensitive endpoints stay out of the code — everything via environment, with simple, auditable rotation."
+                    }
+                }
+            },
+            "tech": {
+                "tagline": "Stack",
+                "title": "Built on a modern, robust stack",
+                "subtitle": "React 19 + TypeScript on the front, Java 21 + Spring Boot on the back and Docker on the infrastructure — choices made for performance, maintainability and team velocity.",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "infra": "Infra"
+            },
+            "cta": {
+                "title": "Ready to centralize your integrations?",
+                "subtitle": "Bring your external APIs out of the shadows with a single platform to configure, observe and protect every flow.",
+                "primaryButton": "Request a demo",
+                "secondaryButton": "Talk to a specialist"
             }
         },
         "cnab240": {

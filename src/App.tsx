@@ -9,12 +9,14 @@ import { HomePage } from "./pages/home";
 const ProductDetailPage = lazy(() => import("./pages/product-detail"));
 const ProductNotFoundPage = lazy(() => import("./pages/product-not-found"));
 const ProductCNAB240Page = lazy(() => import("./pages/product-cnab240"));
+const ProductNucleusPage = lazy(() => import("./pages/product-nucleus"));
 
 const renderRoute = (segments: string[]) => {
   if (segments[0] === "produto") {
     const slug = segments[1];
     if (!slug) return <ProductNotFoundPage />;
     if (slug === "cnab240") return <ProductCNAB240Page />;
+    if (slug === "nucleus") return <ProductNucleusPage />;
     return <ProductDetailPage slug={slug} />;
   }
   return <HomePage />;
