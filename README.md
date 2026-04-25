@@ -10,6 +10,7 @@ Site institucional da **Global Vortex Solutions** — single-page application mu
 
 ## Sumário
 
+- [Funcionalidades principais](#funcionalidades-principais)
 - [Tecnologias](#tecnologias)
 - [Estrutura do projeto](#estrutura-do-projeto)
 - [Pré-requisitos](#pré-requisitos)
@@ -25,6 +26,20 @@ Site institucional da **Global Vortex Solutions** — single-page application mu
 - [Internacionalização](#internacionalização)
 - [Adicionando um novo produto](#adicionando-um-novo-produto)
 - [Possíveis melhorias futuras](#possíveis-melhorias-futuras)
+
+---
+
+## Funcionalidades principais
+
+- 🌐 **Multilíngue (PT / EN / ES)** com detecção automática de idioma e troca em tempo real.
+- 🌗 **Tema light/dark** persistido no `localStorage` via `@heroui/use-theme`.
+- 🧭 **Roteamento por hash** sem `react-router` — âncoras na home (`#products`, `#contact`) coexistem com rotas de página (`#/produto/:slug`).
+- 📦 **Catálogo de produtos** com card listado a partir de `data/products.ts` e páginas de detalhe (genérica ou dedicada por produto).
+- 🪟 **Páginas dedicadas** com narrativa rica para os produtos Nucleus e Mapper240 (Hero, Sobre, Funcionalidades, Diferenciais, Segurança, Stack, CTA).
+- 🎠 **Carrossel de serviços** com autoplay, swipe em mobile e navegação por teclado.
+- ♿ **Acessibilidade base**: skip-link, `aria-label` em ícones, `aria-live` no carrossel e foco visível.
+- ⚡ **Code splitting** das páginas secundárias via `React.lazy` + `Suspense`, com `PageLoader` como fallback.
+- 🛡️ **ErrorBoundary** envolvendo as rotas para isolar falhas de render.
 
 ---
 
@@ -71,7 +86,6 @@ src/
 │   │   ├── service-card.tsx     # card de serviço (memoizado)
 │   │   └── services.tsx         # carrossel
 │   └── ui/                      # primitivos visuais sem domínio
-│       ├── icon-badge.tsx
 │       └── section-header.tsx
 │
 ├── config/
@@ -194,7 +208,7 @@ A distinção é o prefixo `#/`. Isso evita adicionar uma dependência (~35 kB m
 
 ### Componentização em quatro camadas
 
-- **`ui/`**: primitivos visuais sem domínio (ex.: `SectionHeader`, `IconBadge`).
+- **`ui/`**: primitivos visuais sem domínio (ex.: `SectionHeader`).
 - **`common/`**: widgets reutilizáveis com comportamento (`SocialLinks`, `ThemeSwitcher`).
 - **`sections/`**: blocos grandes específicos da Home e cards de listas (`ProductCard`, `ServiceCard`).
 - **`layout/`**: aparece em todas as páginas (`Navbar`, `Footer`, `ErrorBoundary`, `PageLoader`).
@@ -414,7 +428,7 @@ A página entra como chunk separado e só carrega quando o usuário visita `#/pr
 - 📊 **Web Vitals** (RUM via web-vitals + endpoint próprio) para monitorar performance real.
 - 🎨 **Storybook** para documentar componentes em `ui/` e `common/`.
 - 🔁 **CI**: GitHub Actions com `npm ci && npm run lint && npm run build`.
-- 🧹 **Limpeza de dependências**: `axios` ainda figura em `package.json` mas não é mais importado em nenhum arquivo — pode ser removido junto com o lock.
+- 🧰 **Configuração do ESLint**: o script `npm run lint` está mapeado, mas o projeto não tem mais um arquivo de configuração. Restabelecer um `.eslintrc` (ou `eslint.config.js` no formato flat) volta a barrar regressões.
 
 ---
 
