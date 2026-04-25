@@ -1,7 +1,7 @@
-// Barrel exports para componentes de seções
-export { Hero } from './hero';
-export { About } from './about';
-export { Products } from './products';
-export { Services } from './services';
-export { ContactForm } from './contact-form';
-export { ContactInfo } from './contact-info';
+export { About } from "./about";
+export { ContactInfo } from "./contact-info";
+export { Hero } from "./hero";
+export { ProductCard } from "./product-card";
+export { Products } from "./products";
+export { ServiceCard } from "./service-card";
+export { Services } from "./services";

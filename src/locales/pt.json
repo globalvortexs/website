@@ -4,7 +4,10 @@
         "products": "Produtos",
         "about": "Sobre",
         "contactUs": "Contato",
-        "services": "Serviços"
+        "services": "Serviços",
+        "openMenu": "Abrir menu",
+        "closeMenu": "Fechar menu",
+        "skipToContent": "Ir para o conteúdo"
     },
     "hero": {
         "tagline": "Soluções Empresariais",
@@ -20,6 +23,11 @@
         "learnMore": "Saiba Mais",
         "discussProject": "Discutir Seu Projeto",
         "tagline": "Soluções Tecnológicas",
+        "previous": "Anterior",
+        "next": "Próximo",
+        "goToSlide": "Ir para o slide {{slide}}",
+        "pauseAutoplay": "Pausar apresentação automática",
+        "playAutoplay": "Iniciar apresentação automática",
         "items": [
             {
                 "title": "Desenvolvimento de Software",
@@ -52,6 +60,18 @@
         "subtitle": "Conheça o Nucleus, nossa solução inovadora de integração e monitoramento.",
         "tagline": "Solução Empresarial",
         "learnMore": "Saiba Mais",
+        "backToProducts": "Voltar aos Produtos",
+        "category": "Integração e Monitoramento",
+        "overviewTitle": "Visão Geral",
+        "featuresTitle": "Principais Recursos",
+        "ctaTitle": "Pronto para transformar sua operação?",
+        "ctaSubtitle": "Fale com nossa equipe e descubra como o Nucleus pode integrar e monitorar sua infraestrutura digital.",
+        "ctaButton": "Falar com Especialista",
+        "notFound": {
+            "title": "Produto não encontrado",
+            "description": "O produto que você está procurando não existe ou foi removido.",
+            "back": "Voltar para os produtos"
+        },
         "nucleus": {
             "slogan": "O núcleo da sua infraestrutura digital.",
             "description": "Uma ferramenta que cria integrações de forma mais eficiente e conjunto de uma monitoração dessas integrações.",
@@ -60,6 +80,165 @@
                 "monitoring": "Monitoramento em tempo real",
                 "dashboard": "Painel de controle intuitivo",
                 "reports": "Relatórios detalhados"
+            },
+            "featuresDescription": {
+                "integration": "Conecte sistemas heterogêneos sem fricção e reduza o tempo de entrega de novas integrações.",
+                "monitoring": "Acompanhe a saúde das integrações em tempo real e seja alertado antes que o problema chegue ao cliente.",
+                "dashboard": "Tenha uma visão centralizada e intuitiva de todas as suas integrações em um único painel.",
+                "reports": "Gere relatórios detalhados para auditoria, análise de desempenho e tomada de decisão estratégica."
+            }
+        },
+        "cnab240": {
+            "name": "Mapper240",
+            "category": "Aplicativo Desktop · CNAB240",
+            "backToHome": "Voltar para o início",
+            "slogan": "Aplicativo desktop para CNAB240 e planilhas Excel.",
+            "description": "Aplicativo desktop nativo que processa arquivos CNAB240 e planilhas Excel relacionadas — com pipeline em lote robusto baseado em Spring Batch, pronto para a rotina de empresas que operam com bancos brasileiros.",
+            "hero": {
+                "tagline": "Mapper240 · Aplicativo Desktop",
+                "title": "Processamento desktop de",
+                "titleHighlight": "CNAB240 e planilhas Excel",
+                "subtitle": "Aplicativo desktop nativo que automatiza a leitura, validação e o processamento em lote de arquivos CNAB240 — com suporte integrado a planilhas Excel via Apache POI e instaladores prontos para Windows e Linux.",
+                "primaryCta": "Solicitar demonstração",
+                "secondaryCta": "Falar com especialista",
+                "preview": {
+                    "title": "Processamento de remessa",
+                    "fileName": "REMESSA_240.RET",
+                    "status": "Validado",
+                    "metric1Label": "Registros",
+                    "metric1Value": "12.480",
+                    "metric2Label": "Tamanho",
+                    "metric2Value": "Sem limite",
+                    "metric3Label": "Tempo",
+                    "metric3Value": "2,1s"
+                }
+            },
+            "about": {
+                "tagline": "Sobre o produto",
+                "title": "O CNAB240 sem fricção, direto no desktop",
+                "what": {
+                    "title": "O que é CNAB240?",
+                    "description": "CNAB240 é o padrão FEBRABAN de troca de arquivos entre empresas e instituições financeiras — utilizado em cobranças, pagamentos, débitos automáticos e transferências. Cada linha tem 240 posições e segue um layout por banco."
+                },
+                "who": {
+                    "title": "Para quem é o sistema",
+                    "description": "Empresas, cooperativas e operações financeiras que precisam processar grandes volumes de remessa, retorno e planilhas Excel no relacionamento com bancos brasileiros."
+                },
+                "problem": {
+                    "title": "Problema que resolve",
+                    "description": "Substitui scripts manuais e planilhas dispersas por um aplicativo desktop nativo que centraliza o pipeline de processamento, com tolerância a falhas, reprocessamento e visibilidade ponta a ponta."
+                }
+            },
+            "features": {
+                "tagline": "Principais funcionalidades",
+                "title": "Tudo que sua operação precisa em um aplicativo só",
+                "subtitle": "Da chegada do arquivo até a exportação final — cada etapa do fluxo CNAB240 e Excel desenhada para ser rápida, confiável e auditável.",
+                "upload": "Upload de CNAB240 e Excel",
+                "largeFiles": "Processamento em lote escalável",
+                "metadata": "Extração de metadados",
+                "dashboard": "Dashboard e visualização",
+                "items": {
+                    "upload": {
+                        "title": "Upload de CNAB240 e Excel",
+                        "description": "Lê arquivos CNAB240 e planilhas Excel via Apache POI, validando o conteúdo antes do processamento começar."
+                    },
+                    "largeFiles": {
+                        "title": "Processamento em lote escalável",
+                        "description": "Pipeline em lote baseado em Spring Batch — leitura em fluxo, controle de chunks e feedback de progresso para volumes altos."
+                    },
+                    "metadata": {
+                        "title": "Extração de metadados",
+                        "description": "Identifica lotes, registros, totais e tipos de operação direto do arquivo CNAB240 ou da planilha Excel."
+                    },
+                    "dashboard": {
+                        "title": "Dashboard e visualização",
+                        "description": "Painel desktop com indicadores, status e histórico para acompanhar tudo que está em processamento."
+                    },
+                    "reprocess": {
+                        "title": "Reprocessamento e tolerância a falhas",
+                        "description": "Listeners e skippers do Spring Batch isolam erros e permitem reprocessar exatamente o que precisa, sem refazer o lote inteiro."
+                    },
+                    "export": {
+                        "title": "Exportação e notificações",
+                        "description": "Exporte registros e relatórios em formatos amigáveis para conciliação, com notificações por e-mail ao fim do processamento."
+                    }
+                }
+            },
+            "differentials": {
+                "tagline": "Diferenciais",
+                "title": "O que coloca o Mapper240 à frente",
+                "items": {
+                    "noLimit": {
+                        "title": "Sem limite de tamanho",
+                        "description": "Spring Batch processa remessas de qualquer volume sem cortes ou divisão manual."
+                    },
+                    "brazilianBanks": {
+                        "title": "Compatível com bancos brasileiros",
+                        "description": "Layouts ajustados para os principais bancos da praça nacional."
+                    },
+                    "performance": {
+                        "title": "Aplicativo desktop nativo",
+                        "description": "Distribuído via instaladores nativos (MSI/AppImage) com jpackage — sem navegador, sem cloud."
+                    },
+                    "modernUx": {
+                        "title": "UX moderna",
+                        "description": "Front React 19 + HeroUI + Tailwind embarcado via JCEF, com a fluidez de uma SPA dentro do desktop."
+                    }
+                }
+            },
+            "security": {
+                "tagline": "Segurança em primeiro lugar",
+                "title": "Confiança e proteção em cada operação",
+                "subtitle": "Quando o assunto é movimentação financeira, segurança não é opcional. O Mapper240 foi desenhado com camadas de proteção em todo o ciclo do aplicativo.",
+                "items": {
+                    "license": {
+                        "title": "Validação de licença",
+                        "description": "License3j garante que apenas instalações autorizadas executam o aplicativo."
+                    },
+                    "signing": {
+                        "title": "Assinatura GPG",
+                        "description": "Pares de chaves GPG protegem a integridade da licença e dos artefatos distribuídos."
+                    },
+                    "localData": {
+                        "title": "Persistência local em H2",
+                        "description": "Os dados ficam na máquina do usuário — nada trafega para servidores externos."
+                    },
+                    "logging": {
+                        "title": "Logs estruturados",
+                        "description": "Logback com formatos auditáveis para investigação e conformidade."
+                    },
+                    "distribution": {
+                        "title": "Distribuição assinada",
+                        "description": "Instaladores gerados por jpackage com metadados de fornecedor e ícones próprios."
+                    }
+                }
+            },
+            "tech": {
+                "tagline": "Stack",
+                "title": "Construído sobre uma stack robusta",
+                "subtitle": "Java 21 + Spring Boot no backend, React 19 + Vite + Tailwind no front, tudo embarcado em um único binário desktop via JCEF."
+            },
+            "compatibility": {
+                "tagline": "Compatibilidade",
+                "title": "Pronto para o ecossistema bancário brasileiro e instaladores nativos",
+                "banks": {
+                    "title": "Bancos brasileiros",
+                    "subtitle": "Layouts CNAB240 alinhados ao padrão FEBRABAN dos principais bancos utilizados pelas empresas brasileiras."
+                },
+                "platforms": {
+                    "title": "Distribuição nativa",
+                    "subtitle": "Instaladores prontos para os principais sistemas operacionais corporativos.",
+                    "windows": "Windows",
+                    "windowsDescription": "MSI com menu iniciar e instalação per-user.",
+                    "linux": "Linux",
+                    "linuxDescription": "AppImage portátil sem dependências externas."
+                }
+            },
+            "cta": {
+                "title": "Pronto para automatizar seu processamento CNAB240?",
+                "subtitle": "Acelere a rotina da sua empresa com um aplicativo desktop robusto, seguro e fácil de instalar.",
+                "primaryButton": "Solicitar demonstração",
+                "secondaryButton": "Falar com especialista"
             }
         }
     },
@@ -95,30 +274,7 @@
     "contact": {
         "title": "Entre em Contato",
         "subtitle": "Tem perguntas ou precisa de mais informações? Entre em contato hoje e nossa equipe terá prazer em ajudá-lo.",
-        "form": {
-            "title": "Envie-nos uma Mensagem",
-            "fullName": "Nome Completo",
-            "email": "Email",
-            "phone": "Telefone (opcional)",
-            "company": "Empresa (opcional)",
-            "message": "Mensagem",
-            "messagePlaceholder": "Como podemos ajudá-lo?",
-            "consent": "Concordo com o processamento dos meus dados pessoais de acordo com a política de privacidade.",
-            "send": "Enviar Mensagem",
-            "sending": "Enviando...",
-            "errors": {
-                "title": "Erro",
-                "nameRequired": "Nome é obrigatório",
-                "emailRequired": "Email é obrigatório",
-                "emailInvalid": "Por favor, insira um endereço de email válido",
-                "messageRequired": "Mensagem é obrigatória",
-                "consentRequired": "Você deve concordar com os termos"
-            },
-            "success": {
-                "title": "Obrigado!",
-                "message": "Sua mensagem foi enviada com sucesso. Entraremos em contato em breve."
-            }
-        },        "info": {
+        "info": {
             "title": "Informações de Contato",
             "phone": {
                 "label": "Telefone",
@@ -135,5 +291,12 @@
         "description": "Capacitando empresas para alcançar sucesso global através de soluções inovadoras e expertise estratégica.",
         "services": "Serviços",
         "rights": "Todos os direitos reservados."
+    },
+    "errors": {
+        "boundary": {
+            "title": "Algo deu errado",
+            "description": "Ocorreu um erro inesperado. Por favor, tente recarregar a página.",
+            "reload": "Recarregar"
+        }
     }
 }
