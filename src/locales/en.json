@@ -4,7 +4,10 @@
         "products": "Products",
         "about": "About",
         "contactUs": "Contact Us",
-        "services": "Services"
+        "services": "Services",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "skipToContent": "Skip to content"
     },
     "hero": {
         "tagline": "Enterprise Solutions",
@@ -14,12 +17,18 @@
         "ourProducts": "Our Products",
         "contactUs": "Contact Us",
         "dashboardImage": "Enterprise Dashboard"
-    },    "services": {
+    },
+    "services": {
         "title": "Our Services",
         "subtitle": "We offer comprehensive IT solutions to drive digital transformation and operational efficiency for your business.",
         "learnMore": "Learn More",
         "discussProject": "Discuss Your Project",
         "tagline": "Technology Solutions",
+        "previous": "Previous",
+        "next": "Next",
+        "goToSlide": "Go to slide {{slide}}",
+        "pauseAutoplay": "Pause autoplay",
+        "playAutoplay": "Play autoplay",
         "items": [
             {
                 "title": "Software Development",
@@ -52,14 +61,323 @@
         "subtitle": "Discover Nucleus, our innovative integration and monitoring solution.",
         "tagline": "Enterprise Solution",
         "learnMore": "Learn More",
+        "backToProducts": "Back to Products",
+        "category": "Integration & Monitoring",
+        "overviewTitle": "Overview",
+        "featuresTitle": "Key Features",
+        "ctaTitle": "Ready to transform your operations?",
+        "ctaSubtitle": "Talk to our team and discover how Nucleus can integrate and monitor your digital infrastructure.",
+        "ctaButton": "Talk to a Specialist",
+        "notFound": {
+            "title": "Product not found",
+            "description": "The product you are looking for does not exist or has been removed.",
+            "back": "Back to products"
+        },
         "nucleus": {
-            "slogan": "The core of your digital infrastructure.",
-            "description": "A tool that creates integrations more efficiently along with monitoring of these integrations.",
+            "name": "Nucleus",
+            "category": "Platform · API Management",
+            "backToHome": "Back to home",
+            "slogan": "Full-stack platform for API integration management, proxy and monitoring.",
+            "description": "Centralizes external API integrations behind a smart gateway/proxy with real-time observability, automatic authentication and end-to-end access control.",
+            "hero": {
+                "tagline": "Nucleus · Full-stack platform",
+                "title": "Centralize, observe and secure",
+                "titleHighlight": "every API integration",
+                "subtitle": "Full-stack platform that acts as a smart gateway and proxy for your external API integrations — with real-time observability, automatic authentication and end-to-end access control.",
+                "primaryCta": "Request a demo",
+                "secondaryCta": "Talk to a specialist",
+                "preview": {
+                    "title": "Integration Dashboard",
+                    "endpoint1Name": "Stripe API",
+                    "endpoint1Path": "POST /v1/payments",
+                    "endpoint1Status": "Online",
+                    "endpoint1Latency": "112ms",
+                    "endpoint2Name": "SendGrid",
+                    "endpoint2Path": "POST /v3/mail/send",
+                    "endpoint2Status": "Online",
+                    "endpoint2Latency": "84ms",
+                    "metric1Label": "Req/min",
+                    "metric1Value": "1,247",
+                    "metric2Label": "p95 latency",
+                    "metric2Value": "92ms",
+                    "metric3Label": "Uptime",
+                    "metric3Value": "99.98%"
+                }
+            },
+            "about": {
+                "tagline": "About the product",
+                "title": "A single control point for every integration",
+                "what": {
+                    "title": "What is Nucleus?",
+                    "description": "Full-stack platform that combines gateway, proxy and observability into a single tool. Centralizes access to external APIs, applies authentication automatically and exposes metrics, logs and diagnostics in real time."
+                },
+                "who": {
+                    "title": "Who it's for",
+                    "description": "Companies that depend on multiple external API integrations and need a single place to manage credentials, observe behavior and diagnose failures quickly."
+                },
+                "problem": {
+                    "title": "The problem it solves",
+                    "description": "Removes credentials scattered across code, lack of visibility into integration traffic and difficulty diagnosing incidents. Everything goes through an auditable proxy with centralized logs and metrics."
+                }
+            },
             "features": {
-                "integration": "Quick integration with various systems",
+                "tagline": "Key features",
+                "title": "Everything your API operation needs",
+                "subtitle": "From endpoint registration to production diagnostics — every layer of Nucleus is built to give the team autonomy and the operation security.",
+                "registration": "Integration registry",
+                "proxy": "Proxy with auto auth",
                 "monitoring": "Real-time monitoring",
-                "dashboard": "Intuitive control panel",
-                "reports": "Detailed reports"
+                "panel": "Web management panel",
+                "items": {
+                    "registration": {
+                        "title": "Integration and endpoint registry",
+                        "description": "Catalog every external API in one place, with versioning, per-environment configuration and standardized metadata."
+                    },
+                    "proxy": {
+                        "title": "Reverse proxy with automatic authentication",
+                        "description": "Nucleus injects credentials and tokens into calls at runtime, freeing clients from authentication logic and secret handling."
+                    },
+                    "monitoring": {
+                        "title": "Uptime and health monitoring",
+                        "description": "Track each integration's availability and response time in real time, with alerts before the problem reaches your customers."
+                    },
+                    "logs": {
+                        "title": "Detailed request logging",
+                        "description": "Every call generates an auditable record with payload, headers, status and response time — ready for investigation and compliance."
+                    },
+                    "panel": {
+                        "title": "Web panel for management and diagnosis",
+                        "description": "Single interface to configure integrations, inspect logs and visualize metrics, without server access."
+                    },
+                    "accessControl": {
+                        "title": "JWT-based access control",
+                        "description": "JWT authentication with profiles and granular permissions — every user accesses only what they need."
+                    },
+                    "licensing": {
+                        "title": "Per-instance licensing",
+                        "description": "License system that controls usage per instance and protects distribution in corporate environments."
+                    }
+                }
+            },
+            "differentials": {
+                "tagline": "What sets it apart",
+                "title": "What puts Nucleus ahead",
+                "items": {
+                    "fullStack": {
+                        "title": "Integrated full-stack architecture",
+                        "description": "React + TypeScript on the front and Java 21 + Spring Boot on the back — one cohesive product, owned by one team."
+                    },
+                    "observability": {
+                        "title": "Complete observability",
+                        "description": "Metrics, logs and diagnosis in a single platform, with no dependency on external tools."
+                    },
+                    "security": {
+                        "title": "Robust security",
+                        "description": "JWT, profile-based access control, license management and environment-driven config across every layer."
+                    },
+                    "scalability": {
+                        "title": "Scalable to many integrations",
+                        "description": "Supports the integration catalog growing without losing performance or operational clarity."
+                    },
+                    "centralization": {
+                        "title": "Centralized external APIs",
+                        "description": "A single configuration and governance point for everything your application consumes from the outside world."
+                    }
+                }
+            },
+            "security": {
+                "tagline": "Security first",
+                "title": "Protection across every layer",
+                "subtitle": "When integration traffic flows through Nucleus, security isn't optional. The platform is engineered with defense in depth, from login to logging.",
+                "items": {
+                    "jwt": {
+                        "title": "JWT authentication",
+                        "description": "Signed tokens with controlled expiration and refresh — no cookie sessions and easy SSO integration."
+                    },
+                    "rbac": {
+                        "title": "Profile-based access control",
+                        "description": "Granular permissions per endpoint and action, aligned with your organization's responsibility model."
+                    },
+                    "routes": {
+                        "title": "Route protection",
+                        "description": "Every route is validated by backend middleware and frontend guards — no unprotected path."
+                    },
+                    "licenses": {
+                        "title": "License management",
+                        "description": "Per-instance licensing prevents off-contract usage and gives visibility into consumption in corporate environments."
+                    },
+                    "env": {
+                        "title": "Environment variable configuration",
+                        "description": "Secrets and sensitive endpoints stay out of the code — everything via environment, with simple, auditable rotation."
+                    }
+                }
+            },
+            "tech": {
+                "tagline": "Stack",
+                "title": "Built on a modern, robust stack",
+                "subtitle": "React 19 + TypeScript on the front, Java 21 + Spring Boot on the back and Docker on the infrastructure — choices made for performance, maintainability and team velocity.",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "infra": "Infra"
+            },
+            "cta": {
+                "title": "Ready to centralize your integrations?",
+                "subtitle": "Bring your external APIs out of the shadows with a single platform to configure, observe and protect every flow.",
+                "primaryButton": "Request a demo",
+                "secondaryButton": "Talk to a specialist"
+            }
+        },
+        "cnab240": {
+            "name": "Mapper240",
+            "category": "Desktop App · CNAB240",
+            "backToHome": "Back to home",
+            "slogan": "Desktop app for CNAB240 and Excel spreadsheets.",
+            "description": "Native desktop application that processes CNAB240 files and related Excel spreadsheets — with a robust batch pipeline based on Spring Batch, ready for the routine of companies that operate with Brazilian banks.",
+            "hero": {
+                "tagline": "Mapper240 · Desktop App",
+                "title": "Desktop processing of",
+                "titleHighlight": "CNAB240 and Excel spreadsheets",
+                "subtitle": "Native desktop application that automates reading, validation and batch processing of CNAB240 files — with built-in support for Excel spreadsheets via Apache POI and ready-to-install builds for Windows and Linux.",
+                "primaryCta": "Request a demo",
+                "secondaryCta": "Talk to a specialist",
+                "preview": {
+                    "title": "Remittance processing",
+                    "fileName": "REMESSA_240.RET",
+                    "status": "Validated",
+                    "metric1Label": "Records",
+                    "metric1Value": "12,480",
+                    "metric2Label": "Size",
+                    "metric2Value": "No limit",
+                    "metric3Label": "Time",
+                    "metric3Value": "2.1s"
+                }
+            },
+            "about": {
+                "tagline": "About the product",
+                "title": "CNAB240, frictionless and right on the desktop",
+                "what": {
+                    "title": "What is CNAB240?",
+                    "description": "CNAB240 is the FEBRABAN standard for file exchange between companies and financial institutions — used in collections, payments, direct debits and transfers. Each line is 240 characters long and follows a per-bank layout."
+                },
+                "who": {
+                    "title": "Who is it for",
+                    "description": "Companies, cooperatives and financial operations that need to process large volumes of remittance and return files plus related Excel spreadsheets in their relationship with Brazilian banks."
+                },
+                "problem": {
+                    "title": "The problem it solves",
+                    "description": "Replaces manual scripts and scattered spreadsheets with a native desktop app that centralizes the processing pipeline — fault tolerant, reprocessable and end-to-end auditable."
+                }
+            },
+            "features": {
+                "tagline": "Key features",
+                "title": "Everything your operation needs in a single app",
+                "subtitle": "From file arrival to final export — every step of the CNAB240 and Excel flow designed to be fast, reliable and auditable.",
+                "upload": "CNAB240 + Excel ingestion",
+                "largeFiles": "Scalable batch processing",
+                "metadata": "Metadata extraction",
+                "dashboard": "Dashboard and visualization",
+                "items": {
+                    "upload": {
+                        "title": "CNAB240 + Excel ingestion",
+                        "description": "Reads CNAB240 files and Excel spreadsheets via Apache POI, validating the content before processing starts."
+                    },
+                    "largeFiles": {
+                        "title": "Scalable batch processing",
+                        "description": "Spring Batch pipeline — streamed reading, chunk control and progress feedback for high volumes."
+                    },
+                    "metadata": {
+                        "title": "Metadata extraction",
+                        "description": "Identifies batches, records, totals and operation types straight from the CNAB240 file or the Excel spreadsheet."
+                    },
+                    "dashboard": {
+                        "title": "Dashboard and visualization",
+                        "description": "Desktop dashboard with KPIs, status and history to follow everything that is being processed."
+                    },
+                    "reprocess": {
+                        "title": "Reprocessing and fault tolerance",
+                        "description": "Spring Batch listeners and skippers isolate errors and let you reprocess only what's needed without redoing the whole batch."
+                    },
+                    "export": {
+                        "title": "Export and notifications",
+                        "description": "Export records and reports in reconciliation-friendly formats, with email notifications when processing completes."
+                    }
+                }
+            },
+            "differentials": {
+                "tagline": "What sets it apart",
+                "title": "What puts Mapper240 ahead",
+                "items": {
+                    "noLimit": {
+                        "title": "No file size limit",
+                        "description": "Spring Batch processes remittances of any volume without trimming or manual splits."
+                    },
+                    "brazilianBanks": {
+                        "title": "Brazilian banks compatible",
+                        "description": "Layouts tuned for the major banks across the Brazilian market."
+                    },
+                    "performance": {
+                        "title": "Native desktop application",
+                        "description": "Shipped through native installers (MSI/AppImage) built with jpackage — no browser, no cloud."
+                    },
+                    "modernUx": {
+                        "title": "Modern UX",
+                        "description": "React 19 + HeroUI + Tailwind front-end embedded via JCEF, with the fluidity of an SPA inside the desktop."
+                    }
+                }
+            },
+            "security": {
+                "tagline": "Security first",
+                "title": "Trust and protection on every operation",
+                "subtitle": "When financial movement is involved, security is non-negotiable. Mapper240 is designed with layers of protection across the app lifecycle.",
+                "items": {
+                    "license": {
+                        "title": "License validation",
+                        "description": "License3j ensures that only authorized installations can run the application."
+                    },
+                    "signing": {
+                        "title": "GPG signing",
+                        "description": "GPG key pairs protect the integrity of the license and the distributed artifacts."
+                    },
+                    "localData": {
+                        "title": "Local persistence with H2",
+                        "description": "Data stays on the user's machine — nothing travels to external servers."
+                    },
+                    "logging": {
+                        "title": "Structured logs",
+                        "description": "Logback with auditable formats for investigation and compliance."
+                    },
+                    "distribution": {
+                        "title": "Signed distribution",
+                        "description": "Installers built with jpackage carry vendor metadata and bundled icons."
+                    }
+                }
+            },
+            "tech": {
+                "tagline": "Stack",
+                "title": "Built on a robust stack",
+                "subtitle": "Java 21 + Spring Boot on the backend, React 19 + Vite + Tailwind on the front, all embedded in a single desktop binary via JCEF."
+            },
+            "compatibility": {
+                "tagline": "Compatibility",
+                "title": "Ready for the Brazilian banking ecosystem and native installers",
+                "banks": {
+                    "title": "Brazilian banks",
+                    "subtitle": "CNAB240 layouts aligned with the FEBRABAN standard of the major banks used by Brazilian companies."
+                },
+                "platforms": {
+                    "title": "Native distribution",
+                    "subtitle": "Ready-to-install builds for the main corporate operating systems.",
+                    "windows": "Windows",
+                    "windowsDescription": "MSI with start menu entry and per-user installation.",
+                    "linux": "Linux",
+                    "linuxDescription": "Portable AppImage with no external dependencies."
+                }
+            },
+            "cta": {
+                "title": "Ready to automate your CNAB240 processing?",
+                "subtitle": "Speed up your company's routine with a robust, secure and easy-to-install desktop app.",
+                "primaryButton": "Request a demo",
+                "secondaryButton": "Talk to a specialist"
             }
         }
     },
@@ -95,30 +413,7 @@
     "contact": {
         "title": "Get in Touch",
         "subtitle": "Have questions or need more information? Contact us today and our team will be happy to assist you.",
-        "form": {
-            "title": "Send us a Message",
-            "fullName": "Full Name",
-            "email": "Email",
-            "phone": "Phone (optional)",
-            "company": "Company (optional)",
-            "message": "Message",
-            "messagePlaceholder": "How can we help you?",
-            "consent": "I agree to the processing of my personal data in accordance with the privacy policy.",
-            "send": "Send Message",
-            "sending": "Sending...",
-            "errors": {
-                "title": "Error",
-                "nameRequired": "Name is required",
-                "emailRequired": "Email is required",
-                "emailInvalid": "Please enter a valid email address",
-                "messageRequired": "Message is required",
-                "consentRequired": "You must agree to the terms"
-            },
-            "success": {
-                "title": "Thank You!",
-                "message": "Your message has been sent successfully. We\u0027ll get back to you shortly."
-            }
-        },        "info": {
+        "info": {
             "title": "Contact Information",
             "phone": {
                 "label": "Phone",
@@ -134,5 +429,12 @@
     "footer": {
         "description": "Empowering businesses to achieve global success through innovative solutions and strategic expertise.",
         "rights": "All rights reserved."
+    },
+    "errors": {
+        "boundary": {
+            "title": "Something went wrong",
+            "description": "An unexpected error occurred. Please try reloading the page.",
+            "reload": "Reload"
+        }
     }
 }

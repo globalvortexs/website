@@ -1,11 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { HeroUIProvider, ToastProvider } from "@heroui/react";
-import App from './App';
-import './index.css';
-import './lib/config/i18n';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+import App from "./App";
+import "./config/i18n";
+import "./styles/index.css";
+
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+  throw new Error('Root element "#root" not found');
+}
+
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <HeroUIProvider>
       <ToastProvider />
